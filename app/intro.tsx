@@ -11,13 +11,13 @@ const Intro = () => {
       <p className="mb-4 text-lg text-400 text-indigo-500">
         <TextAnimation />
       </p>
-      <p className="mb-8 text-lg">
+      <p className="mb-8">
         With a passion for technology and a keen eye for detail, I bring a
         unique perspective to every project. My diverse expertise allows me to
         tackle complex challenges from multiple angles, ensuring comprehensive
         and innovative solutions.
       </p>
-      <p className="mb-8 text-lg">
+      <p className="mb-8">
         Whether it&apos;s crafting intuitive user experiences, implementing
         robust security measures, optimizing network performance, or extracting
         valuable insights from data, I approach each task with dedication and a

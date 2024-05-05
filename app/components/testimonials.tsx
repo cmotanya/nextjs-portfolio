@@ -43,7 +43,7 @@ const Carousel = () => {
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>
-      <div className="relative mx-auto h-[19rem] w-full overflow-hidden rounded-md md:h-[19rem] md:w-[90%]">
+      <div className="relative mx-auto h-[23rem] w-full overflow-hidden rounded-md md:h-[19rem] md:w-[90%]">
         <Suspense>
           <div className="relative size-full">
             {images.map(({ src, title, text }, index) => (
@@ -54,7 +54,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-slate-800/50 pt-4 md:gap-2">
+                <div className="relative flex h-full w-full flex-col bg-slate-800/50 px-1 pt-4 md:gap-2">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}
@@ -63,7 +63,7 @@ const Carousel = () => {
                     width={250}
                     className="mx-auto h-32 w-32 rounded-full object-cover object-center"
                   />
-                  <h3 className="text-center font-semibold">{title}</h3>
+                  <h3 className="py-2 text-center font-semibold">{title}</h3>
                   <p className="text-balance text-center">{text}</p>
                 </div>
 

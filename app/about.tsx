@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function About() {
   return (
-    <section id="about" className="mt-0 font-extrabold md:mt-6">
-      <h1 className="py-2">About.</h1>
+    <section id="about" className="mt-0 font-semibold md:mt-6">
+      <h1 className="py-2 font-extrabold">About.</h1>
       <div className="flex basis-full flex-col justify-center space-y-6">
         <p>
           Hailing from the coastal city of Mombasa, I am currently a thriving

@@ -7,9 +7,9 @@ import SkillsProficiency from "./components/skills-proficiency";
 
 function Project() {
   return (
-    <section id="about" className="font-extrabold">
+    <section id="about" className="font-semibold">
       <div>
-        <h1 className="py-2">Services</h1>
+        <h1 className="py-2 font-extrabold">Services</h1>
         <p className="md:pb-6">
           Businesses with websites enjoy up to 72% higher online discovery, 88%
           more reviews, 78% more email inquiries, and 96% higher social media
