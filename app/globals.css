@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Quicksand normal font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public//fonts/Quicksand-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
+  /* Quicksand semibold font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public/fonts/Quicksand-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+  }
+  /* Quicksand bold font style. */
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./../public/fonts/Quicksand-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  /* Ubuntu font style. */
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./../public/fonts//Ubuntu-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  :root {
+    --width: min(75ch, calc(100% - 0.5rem));
+
+    /* background colors */
+    --primary: #093bf6;
+    --secondary: #ea83fb;
+    --accent: #f83cd8;
+
+    /* text colors */
+    --text-200: #e5e7eb;
+    --text-300: #d1d5db;
+    --text-400: #9ca3af;
+    --text-500: #6b7280;
+    --text-700: #374151;
+    --text-800: #1f2937;
+    --text-900: #111827;
+  }
+
+  * {
+    @apply m-0 scroll-p-9 scroll-smooth p-0;
+  }
+
+  body {
+    @apply relative min-h-screen w-full bg-gray-900 font-quicksand text-xl;
+  }
+
+  section {
+    @apply px-2;
+  }
+}
+
+@layer components {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover {
+    border: 2px solid #475569;
+    font-size: 1.125rem;
+    -webkit-text-fill-color: #cbd5e1;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #0f172a;
+  }
+
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 2px solid #475569;
+    font-size: 1.125rem;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #cbd5e1;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #0f172a;
+  }
+
+  p {
+    @apply leading-[2.2rem];
+  }
+}
