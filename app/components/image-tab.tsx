@@ -36,32 +36,30 @@ function SkillsTab() {
       </nav>
 
       {/* Tab content */}
-      <div className="w-full md:w-[80%]">
-        <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
-          {tabImg[activeTab].images.map(
-            (image, index) =>
-              image && (
-                <div
-                  key={index}
-                  className={`relative h-[11rem] w-full overflow-hidden md:h-[15rem] ${imgLoad ? "translate-y-0 opacity-100 delay-100" : "translate-y-4 opacity-0"}`}
-                >
-                  {!showLoader ? (
-                    <SkeletonLoader />
-                  ) : (
-                    <Image
-                      src={image}
-                      alt={`${activeTab}-${index}`}
-                      priority
-                      fill
-                      sizes="100vw 15rem, 30rem"
-                      className="absolute h-full w-full origin-center transform overflow-hidden rounded-md object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110 hover:overflow-hidden"
-                      onLoad={() => setImageLoad(true)}
-                    />
-                  )}
-                </div>
-              ),
-          )}
-        </div>
+      <div className="grid w-full grid-cols-2 gap-5 md:grid-cols-3">
+        {tabImg[activeTab].images.map(
+          (image, index) =>
+            image && (
+              <div
+                key={index}
+                className={`relative h-[9rem] w-full overflow-hidden md:h-[12rem] ${imgLoad ? "translate-y-0 opacity-100 delay-100" : "translate-y-4 opacity-0"}`}
+              >
+                {!showLoader ? (
+                  <SkeletonLoader />
+                ) : (
+                  <Image
+                    src={image}
+                    alt={`${activeTab}-${index}`}
+                    priority
+                    fill
+                    sizes="100vw 15rem, 30rem"
+                    className="absolute h-full w-full origin-center transform overflow-hidden rounded-md object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110 hover:overflow-hidden"
+                    onLoad={() => setImageLoad(true)}
+                  />
+                )}
+              </div>
+            ),
+        )}
       </div>
     </div>
   );

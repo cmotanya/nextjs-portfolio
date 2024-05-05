@@ -1,15 +1,17 @@
-import About from "./about";
 import Contact from "./contact";
 import Footer from "./footer";
+import Intro from "./intro";
 import Navigation from "./navigation";
-import Skills from "./skills";
+import About from "./about";
+import Project from "./project";
 
 export default function Home() {
   return (
     <main className="mx-auto">
       <Navigation />
+      <Intro />
       <About />
-      <Skills />
+      <Project />
       <Contact />
       <Footer />
     </main>

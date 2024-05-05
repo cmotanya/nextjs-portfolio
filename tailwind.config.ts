@@ -20,17 +20,18 @@ const config: Config = {
 
       /* colors */
       colors: {
+        "200": "var(--custom-200)",
+        "300": "var(--custom-300)",
+        "400": "var(--custom-400)",
+        "500": "var(--custom-500)",
+        "600": "var(--custom-600)",
+        "700": "var(--custom-700)",
+        "800": "var(--custom-800)",
+        "900": "var(--custom-900)",
+
         "primary-clr": "var(--primary)",
         "secondary-clr": "var(--secondary)",
         "accent-clr": "var(--accent)",
-
-        "200": "var(--text-200)",
-        "300": "var(--text-300)",
-        "400": "var(--text-400)",
-        "500": "var(--text-500)",
-        "700": "var(--text-700)",
-        "800": "var(--text-800)",
-        "900": "var(--text-900)",
       } as ColorType,
 
       /* animation styles */

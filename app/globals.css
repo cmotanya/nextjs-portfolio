@@ -37,18 +37,18 @@
     --width: min(75ch, calc(100% - 0.5rem));
 
     /* background colors */
+    --custom-200: #e5e7eb;
+    --custom-300: #d1d5db;
+    --custom-400: #9ca3af;
+    --custom-500: #6b7280;
+    --custom-600: #4b5563;
+    --custom-700: #374151;
+    --custom-800: #1f2937;
+    --custom-900: #111827;
+
     --primary: #093bf6;
     --secondary: #ea83fb;
     --accent: #f83cd8;
-
-    /* text colors */
-    --text-200: #e5e7eb;
-    --text-300: #d1d5db;
-    --text-400: #9ca3af;
-    --text-500: #6b7280;
-    --text-700: #374151;
-    --text-800: #1f2937;
-    --text-900: #111827;
   }
 
   * {
@@ -56,11 +56,11 @@
   }
 
   body {
-    @apply relative min-h-screen w-full bg-gray-900 font-quicksand text-xl;
+    @apply bg-900 relative min-h-screen w-full font-quicksand text-lg text-gray-400;
   }
 
   section {
-    @apply px-2;
+    @apply mx-auto max-w-3xl px-2 pt-8 md:px-6;
   }
 }
 
@@ -92,5 +92,8 @@
 
   p {
     @apply leading-[2.2rem];
+  }
+  h1 {
+    @apply text-4xl font-extrabold text-indigo-500;
   }
 }

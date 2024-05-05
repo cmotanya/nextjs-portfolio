@@ -1,7 +1,6 @@
 import { Suspense, useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { images } from "../lib/global_links";
-import { cn } from "../utils/cn";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -39,11 +38,12 @@ const Carousel = () => {
   }, [currentIndex, goToNext, interval]);
 
   return (
-    <div>
-      <h2 className="text-balance pb-2 font-semibold">
+    <div className="pt-6">
+      <h2 className="py-2 text-3xl">Testimonials</h2>
+      <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
-      </h2>
-      <div className="relative mx-auto h-[19rem] w-full overflow-hidden rounded-md md:h-[19rem] md:w-[80%]">
+      </p>
+      <div className="relative mx-auto h-[19rem] w-full overflow-hidden rounded-md md:h-[19rem] md:w-[90%]">
         <Suspense>
           <div className="relative size-full">
             {images.map(({ src, title, text }, index) => (
@@ -64,12 +64,7 @@ const Carousel = () => {
                     className="mx-auto h-32 w-32 rounded-full object-cover object-center"
                   />
                   <h3 className="text-center font-semibold">{title}</h3>
-                  <p className="text-balance text-center">
-                    <span className="font-quicksand absolute left-1 text-[5rem] text-slate-500 md:left-28">
-                      &quot;
-                    </span>
-                    {text}
-                  </p>
+                  <p className="text-balance text-center">{text}</p>
                 </div>
 
                 {/* Dots */}
