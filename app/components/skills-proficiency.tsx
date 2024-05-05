@@ -1,11 +1,11 @@
-import {
-  IconStar,
-  IconStarFilled,
-  IconStarHalfFilled,
-} from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { cn } from "../utils/cn";
+import {
+  IconStarFilled,
+  IconStarHalfFilled,
+  IconStar,
+} from "@tabler/icons-react";
 
 function ProfessionalSkills() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<string | null>(null);

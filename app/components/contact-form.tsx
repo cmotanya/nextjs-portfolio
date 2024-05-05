@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { sendEmailSchema, TSendEmailSchema } from "../utils/schema";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 function ContactForm({ accessKey }: { accessKey: string }) {
   const {

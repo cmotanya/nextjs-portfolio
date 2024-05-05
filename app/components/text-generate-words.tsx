@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
 import { Ubuntu } from "next/font/google";
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 import { cn } from "../utils/cn";
 import React from "react";
+import { motion, stagger, useAnimate } from "framer-motion";
 
 export const TextGenerateEffect = ({
   words,
