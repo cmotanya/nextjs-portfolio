@@ -35,13 +35,13 @@ export default function Navigation() {
     <header ref={headerRef} className="relative top-0 z-30 w-full">
       <div
         className={cn(
-          "absolute flex w-full items-center justify-between bg-gray-800 p-3 text-neutral-200",
+          "absolute flex w-full items-center justify-between p-3 text-neutral-200 md:bg-gray-800",
           isNavVisible ? "fixed" : "",
         )}
       >
         {/*--- Website logo is inserted in here. --- */}
         <div>
-          <span className="rounded-md border-2 border-gray-700/50 px-2 py-1 text-gray-400">
+          <span className="hidden rounded-md border-2 border-gray-700/50 px-2 py-1 text-gray-400 md:block">
             Cornelius
           </span>
         </div>
@@ -49,7 +49,10 @@ export default function Navigation() {
         {/* Hamburger menu icon */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="ml-auto rounded-md bg-primary-clr p-2 md:hidden"
+          className={cn(
+            "ml-auto rounded-md p-2 md:hidden",
+            isMenuOpen ? "bg-red-500" : "bg-primary-clr",
+          )}
         >
           {isMenuOpen ? <IconX size={30} /> : <IconMenu2 size={30} />}
         </button>
