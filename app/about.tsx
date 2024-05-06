@@ -1,7 +1,19 @@
+"use client";
+
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
+import { IconBrandLinkedin, IconFile } from "@tabler/icons-react";
 
 function About() {
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = "resume.pdf";
+    link.download = "Cornelius_Motanya.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <section id="about" className="mt-0 font-semibold md:mt-6">
       <h1 className="py-2 font-extrabold">About.</h1>
@@ -42,6 +54,30 @@ function About() {
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div>
+          <p>
+            For more details, you can check out my LinkedIn or download my CV.
+          </p>
+          <div className="flex flex-col justify-center gap-4 pt-3 md:flex-row md:gap-12">
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex transform items-center justify-center gap-2 rounded-md bg-800 p-3 text-slate-400 md:max-w-fit"
+            >
+              <IconBrandLinkedin className="group-hover:text-[#0a66c2]" />
+              LinkedIn
+            </Link>
+            <button
+              onClick={handleDownload}
+              className="flex items-center justify-center gap-2 rounded-md bg-primary-clr p-3 text-300 hover:bg-secondary-clr md:max-w-fit"
+            >
+              <IconFile />
+              Download CV
+            </button>
+          </div>
         </div>
       </div>
     </section>
