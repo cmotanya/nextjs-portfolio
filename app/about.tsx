@@ -65,9 +65,9 @@ function About() {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex transform items-center justify-center gap-2 rounded-md bg-800 p-3 text-slate-400 md:max-w-fit"
+              className="relative flex transform items-center justify-center gap-2 rounded-md bg-800 p-3 text-slate-400 md:max-w-fit"
             >
-              <IconBrandLinkedin className="group-hover:text-[#0a66c2]" />
+              <IconBrandLinkedin className="text-[#0a66c2]" />
               LinkedIn
             </Link>
             <button
