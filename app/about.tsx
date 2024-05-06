@@ -72,7 +72,7 @@ function About() {
             </Link>
             <button
               onClick={handleDownload}
-              className="flex items-center justify-center gap-2 rounded-md bg-accent-clr p-3 text-300 hover:bg-secondary-clr md:max-w-fit"
+              className="flex items-center justify-center gap-2 rounded-md bg-accent-clr p-3 text-800 hover:bg-secondary-clr md:max-w-fit"
             >
               <IconFile />
               Download CV
