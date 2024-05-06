@@ -2,27 +2,37 @@
 
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
+import { introImage } from "./lib/global_links";
 
 const Intro = () => {
   return (
     <section className="pt-[6rem] font-semibold md:pt-[8rem]">
-      <h1 className="py-4">Unlock your Digital Potential.</h1>
+      <div className="grid gap-4 md:grid-flow-col md:grid-cols-[65%_35%]">
+        <div className="space-y-6 md:space-y-10">
+          <p className="animate-pulse pt-4 md:text-xl">
+            👋 Hi there, I&apos;m Cornelius
+          </p>
+          <h2 className="text-4xl font-bold"></h2>
+          <p className="h-[3.6rem] text-2xl uppercase text-yellow-600 md:h-auto">
+            <TextAnimation />
+          </p>
+          <p className="mb-8">
+            As an IT graduate with a passion for technology, I help businesses
+            build an online presence, secure their premises by implementing
+            robust security measures, optimizing network performance, and
+            extracting valuable insights from data.
+          </p>
+        </div>
+        <Image
+          src={introImage}
+          alt="into image"
+          width="300"
+          height="200"
+          className="m-auto hidden h-[15rem] w-[15rem] rotate-3 rounded-md object-cover md:block"
+        />
+      </div>
 
-      <p className="mb-4 text-lg text-400 text-indigo-500">
-        <TextAnimation />
-      </p>
-      <p className="mb-8">
-        With a passion for technology and a keen eye for detail, I bring a
-        unique perspective to every project. My diverse expertise allows me to
-        tackle complex challenges from multiple angles, ensuring comprehensive
-        and innovative solutions.
-      </p>
-      <p className="mb-8">
-        Whether it&apos;s crafting intuitive user experiences, implementing
-        robust security measures, optimizing network performance, or extracting
-        valuable insights from data, I approach each task with dedication and a
-        commitment to excellence.
-      </p>
       <div className="mx-auto mt-10 max-w-3xl sm:flex sm:justify-center lg:justify-start">
         <a
           href="#contact"
@@ -45,13 +55,13 @@ const TextAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        "As an IT graduate with a multifaceted skill-set, I excel in web development.",
+        "I excel in web development.",
         1500,
-        "As an IT graduate with a multifaceted skill-set, I excel in CCTV installation.",
+        "I excel in CCTV installation.",
         1500,
-        "As an IT graduate with a multifaceted skill-set, I excel in network configuration.",
+        "I excel in computers & network.",
         1500,
-        "As an IT graduate with a multifaceted skill-set, I excel and in data analysis.",
+        "I excel in data analysis.",
         1500,
       ]}
       wrapper="span"

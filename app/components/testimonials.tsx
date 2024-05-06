@@ -63,7 +63,9 @@ const Carousel = () => {
                     width={250}
                     className="mx-auto h-32 w-32 rounded-full object-cover object-center"
                   />
-                  <h3 className="py-2 text-center font-semibold">{title}</h3>
+                  <h3 className="py-2 text-center font-semibold text-secondary-clr">
+                    {title}
+                  </h3>
                   <p className="text-balance text-center">{text}</p>
                 </div>
 
@@ -72,7 +74,7 @@ const Carousel = () => {
                   {dots.map((dot) => (
                     <button
                       key={dot}
-                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-orange-700" : "bg-gray-400 hover:bg-gray-500"}`}
+                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-primary-clr" : "bg-gray-400 hover:bg-gray-500"}`}
                       onClick={() => goToSlide(dot)}
                     ></button>
                   ))}
@@ -85,7 +87,7 @@ const Carousel = () => {
         {/* Left Arrows */}
         <button
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-slate-900 p-2 text-white"
+          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-800 p-2 text-white md:block"
         >
           <span aria-hidden="true"></span>
           <svg
@@ -108,7 +110,7 @@ const Carousel = () => {
         {/* Right Arrows */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-slate-900 p-2 text-white"
+          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-800 p-2 text-white md:block"
         >
           <span aria-hidden="true"></span>
           <svg
