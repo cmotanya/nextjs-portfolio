@@ -32,6 +32,7 @@ const config: Config = {
         "primary-clr": "var(--primary)",
         "secondary-clr": "var(--secondary)",
         "accent-clr": "var(--accent)",
+        "mobile-menu-clr": "var(--mobile-menu-clr)",
       } as ColorType,
 
       /* animation styles */

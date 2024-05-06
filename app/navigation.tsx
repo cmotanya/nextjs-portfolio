@@ -12,7 +12,6 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const headerRef = useRef(null);
-  const prevScroll = useRef(0);
 
   /* Function that activates navigation link items. */
   const handleClick = (link: string) => {
@@ -51,7 +50,7 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className={cn(
             "ml-auto rounded-md p-2 md:hidden",
-            isMenuOpen ? "bg-red-500" : "bg-primary-clr",
+            isMenuOpen ? "bg-red-500" : "bg-mobile-menu-clr",
           )}
         >
           {isMenuOpen ? <IconX size={30} /> : <IconMenu2 size={30} />}

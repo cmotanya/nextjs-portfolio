@@ -46,9 +46,11 @@
     --custom-800: #1f2937;
     --custom-900: #111827;
 
-    --primary: #52ba9f;
-    --secondary: #d2f38b;
-    --accent: #66e4c4;
+    --primary: #093bf6;
+    --secondary: #ea83fb;
+    --accent: #a911f3;
+
+    --mobile-menu-clr: #70669a;
   }
 
   * {
