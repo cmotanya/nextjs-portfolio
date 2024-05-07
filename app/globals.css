@@ -96,6 +96,6 @@
     @apply leading-[2.2rem];
   }
   h1 {
-    @apply text-4xl font-extrabold text-indigo-500;
+    @apply text-4xl font-extrabold;
   }
 }

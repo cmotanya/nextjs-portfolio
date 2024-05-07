@@ -5,11 +5,11 @@ import ImageTab from "./components/image-tab";
 import Testimonials from "./components/testimonials";
 import SkillsProficiency from "./components/skills-proficiency";
 
-function Project() {
+function Experience() {
   return (
     <section id="about" className="font-semibold">
       <div>
-        <h1 className="py-2 font-extrabold">Services</h1>
+        <h1 className="py-2 font-extrabold uppercase text-600">Experience</h1>
         <p className="md:pb-6">
           Businesses with websites enjoy up to 72% higher online discovery, 88%
           more reviews, 78% more email inquiries, and 96% higher social media
@@ -35,4 +35,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Experience;

@@ -57,7 +57,7 @@ export const tabImg = [
 /* nav items */
 export const nav_items = [
   { name: "about", link: "#about" },
-  { name: "projects", link: "#skill" },
+  { name: "experience", link: "#experience" },
   { name: "contact", link: "#contact" },
 ];
 

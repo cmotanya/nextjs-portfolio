@@ -16,11 +16,13 @@ function About() {
 
   return (
     <section id="about" className="mt-0 font-semibold md:mt-6">
-      <h1 className="py-2 font-extrabold">About.</h1>
+      <h1 className="py-1 font-extrabold uppercase text-600">About.</h1>
 
       <div className="flex basis-full flex-col justify-center space-y-6 pt-4">
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-600">Background</h3>
+          <h3 className="text-xl font-semibold uppercase text-600">
+            Background
+          </h3>
 
           <p>
             Having a background in IT and the love to learn new technologies,
@@ -35,7 +37,9 @@ function About() {
           </p>
         </div>
         <div>
-          <h3 className="pb-3 text-xl font-semibold text-600">Education</h3>
+          <h3 className="pb-3 text-xl font-semibold uppercase text-600">
+            Education
+          </h3>
           <table className="mb-4 w-full border-collapse rounded-md ring-2 ring-800">
             <thead>
               <tr className="bg-800">
