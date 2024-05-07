@@ -20,7 +20,7 @@ const Intro = () => {
           <p className="mb-8">
             As an IT graduate with a passion for technology, I help businesses
             build an online presence, secure their premises by implementing
-            robust security measures, optimizing network performance, and
+            robust security measures, optimizing lan configurations, and
             extracting valuable insights from data.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Intro = () => {
       <div className="mx-auto mt-10 max-w-3xl sm:flex sm:justify-center lg:justify-start">
         <a
           href="#contact"
-          className="text-bold mb-4 mr-3 flex w-full items-center justify-center rounded-md border border-transparent bg-primary-clr px-8 py-3 text-base font-semibold uppercase text-300 hover:bg-blue-800 sm:mb-0 md:px-10 md:py-4 md:text-lg"
+          className="text-bold mb-4 mr-3 flex w-full items-center justify-center rounded-md border border-transparent bg-primary-clr px-8 py-3 text-base font-semibold uppercase text-800 hover:bg-blue-800 sm:mb-0 md:px-10 md:py-4 md:text-lg"
         >
           Get in Touch
         </a>
@@ -55,13 +55,13 @@ const TextAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        "I excel in web development.",
+        "Expert in front-end development.",
         1500,
-        "I excel in CCTV installation.",
+        "Expert in CCTV installation.",
         1500,
-        "I excel in computers & network.",
+        "Expert in computers & network.",
         1500,
-        "I excel in data analysis.",
+        "Expert in data analysis.",
         1500,
       ]}
       wrapper="span"

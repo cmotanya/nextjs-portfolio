@@ -20,19 +20,22 @@ function About() {
 
       <div className="flex basis-full flex-col justify-center space-y-6 pt-4">
         <div>
-          <h3 className="pb-1 text-xl font-semibold">Background</h3>
+          <h3 className="pb-1 text-xl font-semibold text-600">Background</h3>
+
           <p>
-            I&apos;m a passionate software engineer with a strong background in
-            developing robust and scalable web applications. Born and raised in
-            a small town, I developed an early interest in technology and
-            problem-solving. My curiosity and determination led me to pursue a
-            career in this field.
+            Having a background in IT and the love to learn new technologies,
+            catapulted my interest when I realized I could accomplish more by
+            writing code. My determination led me to pursue data analysis and
+            visualization and later web development as a career.
+          </p>
+          <p>
+            I&apos;m currently a freelancer specializing in CCTV and biometric
+            authentication system installations, and handle simple LAN
+            configuration complements besides wed development.
           </p>
         </div>
         <div>
-          <h3 className="pb-1 text-xl font-semibold text-secondary-clr">
-            Education
-          </h3>
+          <h3 className="pb-3 text-xl font-semibold text-600">Education</h3>
           <table className="mb-4 w-full border-collapse rounded-md ring-2 ring-800">
             <thead>
               <tr className="bg-800">
@@ -58,7 +61,9 @@ function About() {
 
         <div>
           <p>
-            For more details, you can check out my LinkedIn or download my CV.
+            For more details, you can check out my{" "}
+            <span className="text-600">LinkedIn</span> or{" "}
+            <span className="text-600">download my CV</span>.
           </p>
           <div className="flex flex-col justify-center gap-4 pt-3 md:flex-row md:gap-12">
             <Link
