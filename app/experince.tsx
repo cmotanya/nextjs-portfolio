@@ -24,7 +24,7 @@ function Experience() {
         </p>
 
         <div className="mt-3 space-y-4">
-          <div className="grid justify-between rounded-md bg-slate-800/50 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-gray-800/50 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
