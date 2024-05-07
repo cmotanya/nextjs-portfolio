@@ -19,8 +19,8 @@ function About() {
       <h1 className="py-2 font-extrabold">About.</h1>
 
       <div className="flex basis-full flex-col justify-center space-y-6 pt-4">
-        <div>
-          <h3 className="pb-1 text-xl font-semibold text-600">Background</h3>
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-600">Background</h3>
 
           <p>
             Having a background in IT and the love to learn new technologies,
