@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { IconBrandLinkedin, IconFile } from "@tabler/icons-react";
+import { IconBrandLinkedin, IconFile, IconSchool } from "@tabler/icons-react";
 
 function About() {
   function handleDownload() {
@@ -50,7 +50,9 @@ function About() {
             </thead>
             <tbody>
               <tr className=" mx-auto divide-x-2 divide-800">
-                <td className="px-4 py-2">Bachelor of BIT</td>
+                <td className="flex items-center gap-2 px-4 py-2">
+                  <IconSchool /> Bachelor of BIT
+                </td>
                 <td className="px-4 py-2">JKUAT</td>
                 <td className="px-4 py-2">2016</td>
               </tr>
