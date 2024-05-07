@@ -40,7 +40,7 @@ function About() {
           <h3 className="pb-3 text-xl font-semibold uppercase text-600">
             Education
           </h3>
-          <table className="mb-4 w-full border-collapse rounded-md ring-2 ring-800">
+          <table className="mb-4 w-full max-w-full border-collapse rounded-md ring-2 ring-800">
             <thead>
               <tr className="bg-800">
                 <th className="px-4 py-2 text-left">Degree</th>

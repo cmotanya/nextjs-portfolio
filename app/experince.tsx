@@ -8,8 +8,6 @@ import {
   IconBriefcase,
   IconBuilding,
   IconBuildingStore,
-  IconMan,
-  IconTimeline,
 } from "@tabler/icons-react";
 
 function Experience() {
