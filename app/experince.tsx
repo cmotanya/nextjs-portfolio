@@ -23,8 +23,8 @@ function Experience() {
           and provide solutions to unique problems that I encounter.
         </p>
 
-        <div className="mt-3 space-y-4">
-          <div className="grid justify-between rounded-md bg-gray-800/50 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+        <div className="mt-3 space-y-3">
+          <div className="grid justify-between rounded-md bg-800 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
@@ -33,7 +33,7 @@ function Experience() {
                 2017
               </span>
             </div>
-            <p className="text-600">
+            <p className="text-500">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptate, iusto?
             </p>
