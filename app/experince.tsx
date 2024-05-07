@@ -33,7 +33,7 @@ function Experience() {
                 2017
               </span>
             </div>
-            <p className="text-500">
+            <p className="text-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptate, iusto?
             </p>
