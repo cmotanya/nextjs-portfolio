@@ -50,10 +50,14 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className={cn(
             "ml-auto rounded-md p-2 md:hidden",
-            isMenuOpen ? "bg-red-500" : "bg-mobile-menu-clr",
+            isMenuOpen ? "bg-red-500" : "bg-accent-clr",
           )}
         >
-          {isMenuOpen ? <IconX size={30} /> : <IconMenu2 size={30} />}
+          {isMenuOpen ? (
+            <IconX size={30} />
+          ) : (
+            <IconMenu2 size={30} className="text-800" />
+          )}
         </button>
 
         {/* --- Mobile setup navigation. --- */}
@@ -61,13 +65,14 @@ export default function Navigation() {
           className={cn(
             "absolute right-0 top-[4.2rem] z-40 h-[calc(100vh-4rem)] min-h-svh w-full overflow-hidden rounded-md bg-slate-900 transition-transform duration-300 md:hidden",
             isMenuOpen ? "translate-x-0" : "translate-x-full",
+            !isMenuOpen && "hidden",
           )}
         >
           <ul className="flex flex-col items-center gap-20 pt-20">
             {nav_items.map((item, index) => (
               <li
                 key={item.name}
-                className="relative flex h-[5.5ch] w-[20ch] justify-center overflow-hidden py-2"
+                className="relative flex h-[5.5ch] w-[23ch] justify-center overflow-hidden py-2"
               >
                 <NavLink
                   href={item.link}
