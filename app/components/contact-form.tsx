@@ -122,7 +122,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-primaryColor flex justify-center rounded-full px-6 py-2 text-slate-100 transition-all  disabled:bg-slate-500 md:self-end ${
+              className={`bg-slate-800 flex justify-center rounded-full px-6 py-2 text-slate-100 transition-all  disabled:bg-slate-500 md:self-end ${
                 Object.keys(errors).length > 0
                   ? "select-none bg-slate-500"
                   : "bg-primary-clr"
