@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 type ColorType = {
   [key: string]: string;
@@ -12,6 +13,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "399px",
+        lg: "1024.5px",
+        ...defaultTheme.screens,
+      },
       /* font-family */
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
