@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Home from "./_app";
 import SkeletonUI from "./loader";
-import CachedContent from "./components/cached-content";
+import CachedContent from "./components/cache-content";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,7 +31,18 @@ export default function App() {
   return isLoading ? (
     <SkeletonUI />
   ) : isContentCached ? (
-    <CachedContent cachedContent={cachedContent || ""} />
+    <CachedContent
+      cachedContent={
+        {
+          html: "This is the content to cache",
+          meta: {
+            title: "Cornelius | Portfolio",
+            description:
+              "Welcome to my portfolio website! I'm a passionate web developer with expertise in React, Next.js, and other modern web technologies. Browse my projects and learn more about my skills and experience.",
+          },
+        } || ""
+      }
+    />
   ) : (
     <Home />
   );
