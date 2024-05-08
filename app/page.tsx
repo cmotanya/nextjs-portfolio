@@ -28,21 +28,22 @@ export default function App() {
     //  enable scrolling after data is fetched
     document.body.style.overflow = "auto";
   }, []);
-  return isLoading ? <SkeletonUI /> : <SkeletonUI />;
-  //   isContentCached ? (
-  //   <CachedContent
-  //     cachedContent={
-  //       {
-  //         html: "This is the content to cache",
-  //         meta: {
-  //           title: "Cornelius | Portfolio",
-  //           description:
-  //             "Welcome to my portfolio website! I'm a passionate web developer with expertise in React, Next.js, and other modern web technologies. Browse my projects and learn more about my skills and experience.",
-  //         },
-  //       } || ""
-  //     }
-  //   />
-  // ) : (
-  //   <Home />
-  // );
+  return isLoading ? (
+    <SkeletonUI />
+  ) : isContentCached ? (
+    <CachedContent
+      cachedContent={
+        {
+          html: "This is the content to cache",
+          meta: {
+            title: "Cornelius | Portfolio",
+            description:
+              "Welcome to my portfolio website! I'm a passionate web developer with expertise in React, Next.js, and other modern web technologies. Browse my projects and learn more about my skills and experience.",
+          },
+        } || ""
+      }
+    />
+  ) : (
+    <Home />
+  );
 }
