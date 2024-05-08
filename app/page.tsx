@@ -9,19 +9,10 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isContentCached, setIsContentCached] = useState(false);
   const [isCachedContent, setCachedContent] = useState({});
-  // const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {
-    // disable scrolling
+    /* disable scrolling */
     document.body.style.overflow = "hidden";
-
-    // setIsOnline(navigator.onLine);
-
-    // const handleOnline = () => setIsOnline(true);
-    // const handleOffline = () => setIsOnline(false);
-
-    // window.addEventListener("online", handleOnline);
-    // window.addEventListener("offline", handleOffline);
 
     const cachedContent = localStorage.getItem("motanya-content");
 
@@ -34,15 +25,10 @@ export default function App() {
     /* simulate loading time if content is not cached */
     setIsLoading(false);
 
-    //  enable scrolling after data is fetched
+    /* enable scrolling after data is fetched */
     document.body.style.overflow = "auto";
+  }, [isCachedContent]);
 
-    // remove event-listeners if component mounts
-    return () => {
-      // window.removeEventListener("online", handleOnline);
-      // window.removeEventListener("offline", handleOffline);
-    };
-  }, []);
   return isLoading ? (
     <SkeletonUI />
   ) : isContentCached ? (
