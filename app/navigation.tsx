@@ -8,7 +8,6 @@ import { nav_items } from "./lib/global_links";
 
 export default function Navigation() {
   const [isActive, setIsActive] = useState(nav_items[0].name);
-  const [isNavVisible, setIsNavVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const headerRef = useRef(null);
@@ -32,12 +31,7 @@ export default function Navigation() {
 
   return (
     <header ref={headerRef} className="relative top-0 z-30 w-full">
-      <div
-        className={cn(
-          "absolute flex w-full items-center justify-between p-3 text-neutral-200 md:bg-gray-800",
-          isNavVisible ? "fixed" : "",
-        )}
-      >
+      <div className="absolute flex w-full items-center justify-between p-3 text-neutral-200 md:bg-gray-800">
         {/*--- Website logo is inserted in here. --- */}
         <div>
           <span className="hidden rounded-md border-2 border-gray-700/50 px-2 py-1 text-gray-400 md:block">
@@ -126,7 +120,7 @@ export default function Navigation() {
             {nav_items.map((item) => (
               <li
                 key={item.name}
-                className="relative flex h-[3.5ch] w-[9ch] justify-center overflow-hidden py-2"
+                className="relative flex h-[3.5ch] w-[11ch] justify-center overflow-hidden py-2"
               >
                 <NavLink
                   href={item.link}

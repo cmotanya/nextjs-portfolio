@@ -10,7 +10,7 @@ const Intro = () => {
     <section className="pt-[6rem] font-semibold md:pt-[8rem]">
       <div className="grid gap-4 md:grid-flow-col md:grid-cols-[65%_35%]">
         <div className="space-y-6 md:space-y-10">
-          <p className="animate-pulse md:pt-4 md:text-xl">
+          <p className="animate-pulse space-y-6 md:space-y-10 md:text-xl">
             👋 Hi there, I&apos;m Cornelius
           </p>
           <h2 className="text-4xl font-bold"></h2>
