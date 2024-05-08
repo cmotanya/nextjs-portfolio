@@ -8,7 +8,7 @@ import CachedContent from "./components/cache-content";
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isContentCached, setIsContentCached] = useState(false);
-  const [setCachedContent] = useState(null);
+  const [isCachedContent, setCachedContent] = useState(null);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {
