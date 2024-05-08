@@ -14,7 +14,7 @@ export default function App() {
     // disable scrolling
     document.body.style.overflow = "hidden";
 
-    const cachedContent = localStorage.getItem("content-key");
+    const cachedContent = localStorage.getItem("motanya-content");
 
     if (cachedContent) {
       setIsContentCached(true);
