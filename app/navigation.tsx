@@ -62,7 +62,7 @@ export default function Navigation() {
             !isMenuOpen && "hidden",
           )}
         >
-          <ul className="flex flex-col items-center gap-20 pt-20">
+          <ul className="flex flex-col items-center gap-10 pt-10 xs:gap-20 sm:pt-20">
             {nav_items.map((item, index) => (
               <li
                 key={item.name}

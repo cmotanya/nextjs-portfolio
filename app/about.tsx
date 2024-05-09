@@ -1,19 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import Link from "next/link";
 import { IconBrandLinkedin, IconFile, IconSchool } from "@tabler/icons-react";
 
 function About() {
-  function handleDownload() {
+  const handleDownload = useCallback(() => {
     const link = document.createElement("a");
     const fileID = "18r8SaE40PmARQSv5kV42NAQaLsg-3R8B";
     link.href = `https://drive.google.com/uc?export=download&id=${fileID}`;
-    // link.download = "resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  }, []);
 
   return (
     <section id="about" className="mt-0 font-semibold md:mt-6">

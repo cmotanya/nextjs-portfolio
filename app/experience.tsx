@@ -84,9 +84,7 @@ function Experience() {
                   key={index}
                   src={imgSrc}
                   alt={alt[0]}
-                  // fill
                   priority
-                  sizes="100vw 15rem, 30rem"
                   width="200"
                   height="200"
                   className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
@@ -105,7 +103,6 @@ function Experience() {
                   key={index}
                   src={imgSrc}
                   alt={alt[1]}
-                  // fill
                   priority
                   width="300"
                   height="300"
@@ -127,11 +124,9 @@ function Experience() {
                   alt={alt[2]}
                   // fill
                   priority
-                  // sizes="100vw 15rem, 30rem"
                   width="300"
                   height="300"
                   className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
-                  // className="absolute h-full w-full origin-center transform overflow-hidden rounded-md object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110 hover:overflow-hidden"
                 />
               ),
           )}
