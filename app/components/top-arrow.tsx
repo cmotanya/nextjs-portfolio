@@ -10,8 +10,8 @@ const TopArrowButton = () => {
     } else {
       setIsVisible(false);
     }
-    window.addEventListener("scroll", toggleVisibility);
   };
+  window.addEventListener("scroll", toggleVisibility);
 
   const scrollToTop = () => {
     window.scroll({ top: 0, behavior: "smooth" });
@@ -21,7 +21,7 @@ const TopArrowButton = () => {
     <button
       onClick={scrollToTop}
       className={cn(
-        "text-100 fixed bottom-5 right-5 rounded-full bg-700 p-3 transition-opacity duration-300 md:p-2",
+        "text-100 fixed bottom-5 right-5 z-40 rounded-full bg-700 p-3 transition-opacity duration-300 md:p-2",
         isVisible ? "opacity-100" : "opacity-0",
       )}
     >
