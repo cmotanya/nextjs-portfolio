@@ -15,7 +15,7 @@ function Home() {
       <About />
       <Experience />
       <Contact />
-      <TopArrowButton />
+      {/* <TopArrowButton /> */}
       <Footer />
     </main>
   );
