@@ -17,7 +17,7 @@ function Experience() {
   const alt = tabImg.map((img) => img.name);
 
   return (
-    <section id="about" className="font-semibold">
+    <section id="experience" className="font-semibold">
       <div>
         <h1 className="py-2 font-extrabold uppercase text-600">Experience</h1>
         <p className="md:pb-6">
