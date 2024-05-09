@@ -1,16 +1,21 @@
 "use client";
 
 import React from "react";
-import ImageTab from "./components/image-tab";
 import Testimonials from "./components/testimonials";
 import SkillsProficiency from "./components/skills-proficiency";
+import Image from "next/image";
 import {
   IconBriefcase,
   IconBuilding,
   IconBuildingStore,
 } from "@tabler/icons-react";
+import Tabs from "./components/image-tab";
+import { tabImg } from "./lib/global_links";
 
 function Experience() {
+  const img = tabImg.map((img) => img.images);
+  const alt = tabImg.map((img) => img.name);
+
   return (
     <section id="about" className="font-semibold">
       <div>
@@ -70,7 +75,69 @@ function Experience() {
       </div>
 
       {/* image set describing my kind of work. */}
-      <ImageTab />
+      <Tabs>
+        <div title={alt[0]} className="">
+          {img[0].map(
+            (imgSrc, index) =>
+              imgSrc != undefined && (
+                <Image
+                  key={index}
+                  src={imgSrc}
+                  alt={alt[0]}
+                  // fill
+                  priority
+                  sizes="100vw 15rem, 30rem"
+                  width="200"
+                  height="200"
+                  objectFit="cover"
+                  className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
+                />
+              ),
+          )}
+        </div>
+        <div
+          title={alt[1]}
+          className="grid w-full grid-cols-2 gap-5 md:grid-cols-3"
+        >
+          {img[1].map(
+            (imgSrc, index) =>
+              imgSrc != undefined && (
+                <Image
+                  key={index}
+                  src={imgSrc}
+                  alt={alt[1]}
+                  // fill
+                  priority
+                  width="300"
+                  height="300"
+                  className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
+                />
+              ),
+          )}
+        </div>
+        <div
+          title={alt[2]}
+          className="grid w-full grid-cols-2 gap-5 md:grid-cols-3"
+        >
+          {img[2].map(
+            (imgSrc, index) =>
+              imgSrc != undefined && (
+                <Image
+                  key={index}
+                  src={imgSrc}
+                  alt={alt[2]}
+                  // fill
+                  priority
+                  // sizes="100vw 15rem, 30rem"
+                  width="300"
+                  height="300"
+                  className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
+                  // className="absolute h-full w-full origin-center transform overflow-hidden rounded-md object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110 hover:overflow-hidden"
+                />
+              ),
+          )}
+        </div>
+      </Tabs>
 
       {/* Carousel featuring feedback from clients. */}
       <Testimonials />
