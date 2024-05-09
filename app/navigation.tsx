@@ -3,7 +3,13 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "./utils/cn";
-import { IconArrowRight, IconMenu2, IconX } from "@tabler/icons-react";
+import {
+  IconArrowRight,
+  IconDeviceMobile,
+  IconFile,
+  IconMenu2,
+  IconX,
+} from "@tabler/icons-react";
 import { nav_items } from "./lib/global_links";
 
 export default function Navigation() {
@@ -90,26 +96,26 @@ export default function Navigation() {
           </ul>
 
           {/* --- Mobile button link for contact. --- */}
-          <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-3xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
+          <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-2xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
             <Link
               href="./assets/Resume.pdf"
               target="_blank"
               passHref={true}
-              className=""
+              className="flex items-center gap-2"
             >
-              download resume
+              download resume <IconFile />
             </Link>
           </button>
 
           {/* Download resume for mobile devices. */}
-          <button className="absolute bottom-[11rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-3xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
+          <button className="absolute bottom-[10rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-2xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
             <Link
               href="./assets/Resume.pdf"
               target="_blank"
               passHref={true}
-              className=""
+              className="flex items-center gap-2"
             >
-              contact me
+              contact me <IconDeviceMobile />
             </Link>
           </button>
         </nav>
