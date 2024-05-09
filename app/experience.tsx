@@ -89,7 +89,6 @@ function Experience() {
                   sizes="100vw 15rem, 30rem"
                   width="200"
                   height="200"
-                  objectFit="cover"
                   className="h-[8rem] w-[9.5rem] rounded-md object-cover md:h-[11rem] md:w-[13rem]"
                 />
               ),
