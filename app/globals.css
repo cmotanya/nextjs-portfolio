@@ -46,9 +46,11 @@
     --custom-800: #1f2937;
     --custom-900: #111827;
 
-    --primary: #a6a95f;
-    --secondary: #d3d59b;
-    --accent: #d0d374;
+    --txt-clr: #170321;
+    --bg-clr: #fdf9fe;
+    --primary: #c123ed;
+    --secondary: #f38374;
+    --accent: #f1ba58;
 
     --mobile-menu-clr: #70669a;
   }
@@ -58,7 +60,7 @@
   }
 
   body {
-    @apply relative min-h-screen w-full bg-900 font-quicksand text-lg text-gray-400;
+    @apply bg-bgClr relative min-h-screen w-full font-quicksand text-lg text-800;
   }
 
   section {

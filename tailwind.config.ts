@@ -35,6 +35,7 @@ const config: Config = {
         "800": "var(--custom-800)",
         "900": "var(--custom-900)",
 
+        "bgClr": "var(--bg-clr)",
         "primary-clr": "var(--primary)",
         "secondary-clr": "var(--secondary)",
         "accent-clr": "var(--accent)",
