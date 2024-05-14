@@ -37,26 +37,26 @@ function About() {
           </p>
         </div>
         <div>
-          <h3 className="pb-3 text-xl font-semibold uppercase text-800">
+          <h3 className="pb-3 text-xl font-semibold uppercase text-600">
             Education
           </h3>
-          <table className="mb-4 w-full max-w-full border-collapse rounded-md ring-2 ring-500">
+          <table className="mb-4 w-full max-w-full border-collapse rounded-md ring-2 ring-800">
             <thead>
-              <tr className="bg-secondary-clr text-800">
+              <tr className="bg-800">
                 <th className="px-4 py-2 text-left">Degree</th>
                 <th className="px-4 py-2 text-left">Institution</th>
                 <th className="px-4 py-2 text-left">Year</th>
               </tr>
             </thead>
             <tbody>
-              <tr className=" mx-auto divide-x-2 divide-500">
+              <tr className=" mx-auto divide-x-2 divide-800">
                 <td className="flex items-center gap-2 px-4 py-2">
                   <IconSchool /> Bachelor of BIT
                 </td>
                 <td className="px-4 py-2">JKUAT</td>
                 <td className="px-4 py-2">2016</td>
               </tr>
-              <tr className="divide-x-2 divide-500 bg-gray-800/50">
+              <tr className="divide-x-2 divide-800 bg-gray-800/50">
                 <td className="px-4 py-2">High School Certificate</td>
                 <td className="px-4 py-2">Nyamagwa Boys&apos; School</td>
                 <td className="px-4 py-2">2009</td>

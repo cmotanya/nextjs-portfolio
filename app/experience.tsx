@@ -42,7 +42,7 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-800 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
@@ -51,7 +51,7 @@ function Experience() {
                 2019
               </span>
             </div>
-            <p className="text-800">
+            <p className="text-500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Deserunt, amet?
             </p>
