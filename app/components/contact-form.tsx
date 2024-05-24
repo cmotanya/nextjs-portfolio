@@ -64,7 +64,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               placeholder="enter name..."
               name="name"
               autoComplete="name"
-              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-800 placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
+              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
             />
             {errors.name && (
               <span

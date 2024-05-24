@@ -175,16 +175,14 @@ function SkillDrawer({
 }) {
   return (
     <div className="space-y-1">
-      <p className="uppercase">{skillName}</p>
+      <p className="">{skillName}</p>
       <button
         onClick={() => {
           toggleDrawer(skillName);
         }}
         className={cn(
-          "rounded-full bg-slate-700/50 px-4 py-2 outline-none outline-offset-2 outline-gray-800 transition-all hover:bg-secondary-clr hover:font-semibold hover:text-gray-800 hover:outline-secondary-clr",
-          isOpen
-            ? " bg-accent-clr font-semibold text-gray-800 outline-accent-clr"
-            : "",
+          "rounded-full bg-neutral-800/50 px-3 py-1 outline-none outline-offset-2 outline-800 transition-all hover:font-semibold hover:text-500 hover:outline-700",
+          isOpen ? "font-semibold text-500 outline-800" : "",
         )}
       >
         {isOpen ? "Hide Details" : "Show Details"}
@@ -197,7 +195,7 @@ function SkillDrawer({
             animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="grid grid-flow-row gap-4 pt-2 text-slate-300 group-hover:text-slate-500 md:grid-cols-2"
+            className="grid grid-flow-row gap-4 pt-2 text-400 group-hover:text-neutral-600 md:grid-cols-2"
           >
             {children}
           </motion.div>
@@ -223,9 +221,9 @@ function SkillItem({
   icon5: React.ReactNode;
 }) {
   return (
-    <div className="mx-auto flex gap-2 hover:text-slate-300">
+    <div className="mx-auto flex gap-2 hover:text-neutral-400">
       <span className="inline-block min-w-28">{text}</span>
-      <span className="hover:text-slate-300">{icon1}</span>
+      <span className="hover:text-neutral-300">{icon1}</span>
       <span>{icon2}</span>
       <span>{icon3}</span>
       <span>{icon4}</span>

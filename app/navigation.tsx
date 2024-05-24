@@ -50,7 +50,7 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className={cn(
             "ml-auto rounded-md p-2 md:hidden",
-            isMenuOpen ? "bg-red-500" : "bg-accent-clr",
+            isMenuOpen ? "bg-red-500" : "bg-primary-clr",
           )}
         >
           {isMenuOpen ? (
@@ -63,7 +63,7 @@ export default function Navigation() {
         {/* --- Mobile setup navigation. --- */}
         <nav
           className={cn(
-            "absolute right-0 top-[4.2rem] z-40 h-[calc(100vh-4rem)] min-h-svh w-full overflow-hidden rounded-md bg-slate-900 transition-transform duration-300 md:hidden",
+            "absolute right-0 top-[4.2rem] z-40 h-[calc(100vh-4rem)] min-h-svh w-full overflow-hidden rounded-md bg-900 transition-transform duration-300 md:hidden",
             isMenuOpen ? "translate-x-0" : "translate-x-full",
             !isMenuOpen && "hidden",
           )}
