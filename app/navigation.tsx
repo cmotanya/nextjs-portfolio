@@ -56,7 +56,7 @@ export default function Navigation() {
           {isMenuOpen ? (
             <IconX size={30} />
           ) : (
-            <IconMenu2 size={30} className="text-800" />
+            <IconMenu2 size={30} className="text-300" />
           )}
         </button>
 
@@ -81,12 +81,12 @@ export default function Navigation() {
                 >
                   <div
                     className={cn(
-                      "transform-transition flex items-center gap-x-3 text-gray-400 duration-300 active:translate-x-2",
+                      "transform-transition flex items-center gap-x-3 text-400 duration-300 active:translate-x-2",
                       isMenuOpen && `delay-${index * 100}`,
                     )}
                   >
                     <span>{item.name}</span>
-                    <span className="rounded-full bg-gray-700 p-2 text-gray-200">
+                    <span className="rounded-full bg-700 p-2 text-200">
                       <IconArrowRight />
                     </span>
                   </div>
@@ -96,7 +96,7 @@ export default function Navigation() {
           </ul>
 
           {/* --- Mobile button link for contact. --- */}
-          <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-2xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
+          <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-neutral-800/50 px-4 py-3 text-2xl uppercase text-400 md:hidden">
             <Link
               href="./assets/Resume.pdf"
               target="_blank"
@@ -108,7 +108,7 @@ export default function Navigation() {
           </button>
 
           {/* Download resume for mobile devices. */}
-          <button className="absolute bottom-[10rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-slate-800/50 px-4 py-3 text-2xl uppercase text-slate-400 hover:text-slate-400 md:hidden">
+          <button className="absolute bottom-[10rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-neutral-800/50 px-4 py-3 text-2xl uppercase text-400 md:hidden">
             <Link
               href="./assets/Resume.pdf"
               target="_blank"
@@ -137,7 +137,7 @@ export default function Navigation() {
 
                   <span
                     className={cn(
-                      "absolute bottom-1 h-0.5 bg-slate-300 transition-all duration-300",
+                      "absolute bottom-1 h-0.5 bg-300 transition-all duration-300",
                       isActive === item.name ? "w-full" : "w-0",
                     )}
                   ></span>
@@ -148,12 +148,12 @@ export default function Navigation() {
         </nav>
 
         {/* --- Button link to download resume. --- */}
-        <button className="rounded-m hidden items-center justify-center  rounded-sm px-4 py-2 text-slate-300 md:flex">
+        <button className="rounded-m hidden items-center justify-center  rounded-sm px-4 py-2 text-300 md:flex">
           <Link
             href="./assets/Resume.pdf"
             target="_blank"
             passHref={true}
-            className="flex items-center gap-1 rounded-md bg-gray-700/50 px-4 py-2 text-slate-400 hover:text-slate-300"
+            className="flex items-center gap-1 rounded-md bg-gray-700/50 px-4 py-2 text-400 hover:text-300"
           >
             contact me
           </Link>
@@ -182,8 +182,8 @@ function NavLink({
       className={cn(
         "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl uppercase hover:text-slate-300 md:text-lg",
         active
-          ? "bg-slate-800 text-slate-300 md:bg-transparent"
-          : "text-slate-400/50",
+          ? "bg-800 text-neutral-300 md:bg-transparent"
+          : "text-neutral-400/50",
       )}
     >
       {children}
