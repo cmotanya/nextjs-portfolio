@@ -54,7 +54,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-neutral-800/50 px-1 pt-4 md:gap-2">
+                <div className="relative flex h-full w-full flex-col bg-neutral-800 px-1 pt-4 md:gap-2">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}
@@ -74,7 +74,7 @@ const Carousel = () => {
                   {dots.map((dot) => (
                     <button
                       key={dot}
-                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-primary-clr" : "bg-gray-400 hover:bg-gray-500"}`}
+                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-900" : "bg-gray-400 hover:bg-gray-500"}`}
                       onClick={() => goToSlide(dot)}
                     ></button>
                   ))}
