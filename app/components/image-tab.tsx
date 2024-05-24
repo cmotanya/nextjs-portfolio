@@ -17,11 +17,11 @@ const Tabs = ({ children }: TabsProps) => {
   const renderTabs = () => {
     return children.map((child, index) => {
       const isActive = index === isActiveTab;
-      const tabsClass = isActive ? "bg-gray-800" : "";
+      const tabsClass = isActive ? "bg-neutral-800" : "";
       return (
         <li
           key={index}
-          className={cn("cursor-pointer rounded-md px-3 py-2", tabsClass)}
+          className={cn("cursor-pointer rounded-full px-4 py-2", tabsClass)}
           onClick={() => setIsActiveTab(index)}
           role="tabs"
           aria-selected={isActive}

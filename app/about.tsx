@@ -56,7 +56,7 @@ function About() {
                 <td className="px-4 py-2">JKUAT</td>
                 <td className="px-4 py-2">2016</td>
               </tr>
-              <tr className="divide-x-2 divide-800 bg-gray-800/50">
+              <tr className="divide-x-2 divide-800 bg-neutral-800/50">
                 <td className="px-4 py-2">High School Certificate</td>
                 <td className="px-4 py-2">Nyamagwa Boys&apos; School</td>
                 <td className="px-4 py-2">2009</td>
