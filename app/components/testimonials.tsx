@@ -74,7 +74,7 @@ const Carousel = () => {
                   {dots.map((dot) => (
                     <button
                       key={dot}
-                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-900" : "bg-gray-400 hover:bg-gray-500"}`}
+                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-neutral-950" : "bg-gray-400 hover:bg-gray-500"}`}
                       onClick={() => goToSlide(dot)}
                     ></button>
                   ))}
