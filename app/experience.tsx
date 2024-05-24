@@ -32,7 +32,7 @@ function Experience() {
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
               </p>
-              <span className="ml-8 inline-block rounded-md bg-gray-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
                 2017
               </span>
             </div>
@@ -47,7 +47,7 @@ function Experience() {
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
               </p>
-              <span className="ml-8 inline-block rounded-md bg-gray-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
                 2019
               </span>
             </div>
@@ -62,7 +62,7 @@ function Experience() {
               <p className="flex items-center gap-2">
                 <IconBriefcase /> Freelancing Gig
               </p>
-              <span className="ml-8 inline-block rounded-md bg-gray-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
                 2020
               </span>
             </div>
@@ -137,8 +137,8 @@ function Experience() {
       <Testimonials />
 
       {/* Skill set array. */}
-      <div>
-        <h2 className="py-4 text-xl font-bold uppercase">
+      <div className="pt-10">
+        <h2 className="text-xl font-bold uppercase text-600">
           Below are my skills:
         </h2>
         <SkillsProficiency />

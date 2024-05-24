@@ -64,7 +64,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               placeholder="enter name..."
               name="name"
               autoComplete="name"
-              className={`rounded-md bg-transparent py-2 ps-4 text-slate-300 ring-2 ring-slate-700 placeholder:text-slate-500 focus-within:outline-none focus-within:ring-slate-500`}
+              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-800 placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
             />
             {errors.name && (
               <span
@@ -79,7 +79,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="email"
               placeholder="enter email..."
               autoComplete="email"
-              className={`rounded-md bg-transparent py-2 ps-4 text-slate-300 ring-2 ring-slate-700 transition-all placeholder:text-slate-500 focus-within:outline-none focus-within:ring-slate-500`}
+              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
             />
             {errors.email && (
               <span
@@ -94,7 +94,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="mobile"
               placeholder="enter telephone..."
               autoComplete="tel"
-              className={`rounded-md bg-transparent py-2 ps-4 text-slate-300 ring-2 ring-slate-700 transition-all placeholder:text-slate-500 focus-within:outline-none focus-within:ring-slate-500`}
+              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
             />
             {errors.mobile && (
               <span
@@ -109,7 +109,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               rows={4}
               name="textarea"
               placeholder="enter message..."
-              className={`resize-none rounded-md bg-transparent px-4 py-1 text-slate-300 ring-2 ring-slate-700 transition-all placeholder:text-slate-500 focus-within:outline-none focus-within:ring-slate-500`}
+              className={`resize-none rounded-md bg-transparent px-4 py-1 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
             />
             {errors.textarea && (
               <span
@@ -124,8 +124,8 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               disabled={isSubmitting}
               className={`bg-primaryColor flex justify-center rounded-full px-6 py-2 text-slate-800 transition-all md:self-end ${
                 Object.keys(errors).length > 0
-                  ? "select-none bg-500 text-200"
-                  : "bg-primary-clr"
+                  ? "select-none bg-500"
+                  : "bg-primary-clr text-300"
               }`}
             >
               {isSubmitting ? "Sending..." : "Send"}

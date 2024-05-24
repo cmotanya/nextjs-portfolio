@@ -39,7 +39,7 @@ const Carousel = () => {
 
   return (
     <div className="pt-6">
-      <h2 className="py-2 text-3xl">Testimonials</h2>
+      <h2 className="pt-4 text-2xl uppercase text-600">Testimonials</h2>
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>
@@ -54,7 +54,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-slate-800/50 px-1 pt-4 md:gap-2">
+                <div className="relative flex h-full w-full flex-col bg-neutral-800/50 px-1 pt-4 md:gap-2">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}
@@ -87,7 +87,7 @@ const Carousel = () => {
         {/* Left Arrows */}
         <button
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-800 p-2 text-white md:block"
+          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-900 p-2 text-white md:block"
         >
           <span aria-hidden="true"></span>
           <svg
@@ -110,7 +110,7 @@ const Carousel = () => {
         {/* Right Arrows */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-800 p-2 text-white md:block"
+          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-900 p-2 text-white md:block"
         >
           <span aria-hidden="true"></span>
           <svg
