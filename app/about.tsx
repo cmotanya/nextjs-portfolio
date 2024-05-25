@@ -76,14 +76,14 @@ function About() {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex transform items-center justify-center gap-2 rounded-md bg-800 p-3 text-slate-400 md:max-w-fit"
+              className="relative flex transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-slate-400 transition-all active:scale-105 md:max-w-fit"
             >
               <IconBrandLinkedin className="text-[#0a66c2]" />
               LinkedIn
             </Link>
             <button
               onClick={handleDownload}
-              className="flex items-center justify-center gap-2 rounded-md bg-accent-clr p-3 text-800 hover:bg-secondary-clr md:max-w-fit"
+              className="flex items-center justify-center gap-2 rounded-full px-4 py-3 ring-2 ring-700 transition-all hover:ring-800 active:scale-105 md:max-w-fit"
             >
               <IconFile />
               Download CV

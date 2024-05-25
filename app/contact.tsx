@@ -6,7 +6,7 @@ import ContactForm from "./components/contact-form";
 
 function ContactComponent({ icon, text }: { icon: ReactNode; text: string }) {
   return (
-    <div className="relative mb-2 ml-10 flex h-12 w-[25ch] items-center gap-4 rounded-md bg-neutral-800/50 ps-3 font-semibold text-400 ring-0 ring-700 before:absolute before:-left-8 before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-rose-800 after:absolute after:-left-8 after:top-1/2 after:size-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-gray-900 md:mb-0">
+    <div className="relative mb-2 ml-10 flex h-12 w-[25ch] items-center gap-4 rounded-md bg-neutral-800 ps-3 font-semibold text-400 ring-0 ring-700 before:absolute before:-left-8 before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-rose-800 after:absolute after:-left-8 after:top-1/2 after:size-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-transparent md:mb-0">
       {icon} {text}
     </div>
   );

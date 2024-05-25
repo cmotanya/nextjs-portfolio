@@ -182,7 +182,7 @@ function SkillDrawer({
         }}
         className={cn(
           "rounded-full bg-neutral-800/50 px-3 py-1 outline-none outline-offset-2 outline-800 transition-all hover:font-semibold hover:text-500 hover:outline-700",
-          isOpen ? "font-semibold text-500 outline-800" : "",
+          isOpen ? "font-semibold text-500 outline-700" : "",
         )}
       >
         {isOpen ? "Hide Details" : "Show Details"}
