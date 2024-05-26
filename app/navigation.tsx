@@ -37,13 +37,9 @@ export default function Navigation() {
 
   return (
     <header ref={headerRef} className="relative top-0 z-30 w-full">
-      <div className="absolute flex w-full items-center justify-between p-3 text-neutral-200 md:bg-gray-800">
+      <div className="absolute flex w-full items-center justify-between p-3 text-neutral-200 md:bg-800">
         {/*--- Website logo is inserted in here. --- */}
-        <div>
-          <span className="hidden rounded-md border-2 border-gray-700/50 px-2 py-1 text-gray-400 md:block">
-            Cornelius
-          </span>
-        </div>
+        <div></div>
 
         {/* Hamburger menu icon */}
         <button
@@ -135,25 +131,22 @@ export default function Navigation() {
                 >
                   {item.name}
 
-                  <span
-                    className={cn(
-                      "absolute bottom-1 h-0.5 bg-300 transition-all duration-300",
-                      isActive === item.name ? "w-full" : "w-0",
-                    )}
-                  ></span>
+                  {/* <span
+                    className={cn(isActive === item.name ? "" : "")}
+                  ></span> */}
                 </NavLink>
               </li>
             ))}
           </ul>
         </nav>
 
-        {/* --- Button link to download resume. --- */}
+        {/* --- Button link for contact me --- */}
         <button className="rounded-m hidden items-center justify-center  rounded-sm px-4 py-2 text-300 md:flex">
           <Link
             href="./assets/Resume.pdf"
             target="_blank"
             passHref={true}
-            className="flex items-center gap-1 rounded-md bg-gray-700/50 px-4 py-2 text-400 hover:text-300"
+            className="flex items-center gap-1 rounded-md bg-neutral-700/50 px-4 py-2 text-400 hover:text-300"
           >
             contact me
           </Link>
