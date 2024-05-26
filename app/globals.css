@@ -47,16 +47,16 @@
     --custom-900: #171717;
     --custom-950: #0a0a0a;
 
-    --bg-clr: #040D12;
+    --bg-clr: #040d12;
     --primary: #1c25e7;
-    --secondary: #5C8374;
-    --accent: #5C8374;
+    --secondary: #5c8374;
+    --accent: #5c8374;
 
     --mobile-menu-clr: #70669a;
   }
 
   * {
-    @apply m-0 scroll-smooth p-0;
+    @apply m-0 select-none scroll-smooth p-0;
   }
 
   body {

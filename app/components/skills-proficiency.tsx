@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { cn } from "../utils/cn";
-import {
-  IconStarFilled,
-  IconStarHalfFilled,
-  IconStar,
-} from "@tabler/icons-react";
+
+const delay = `delay-${Math.floor(Math.random() * 10)}ms`;
 
 function ProfessionalSkills() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<string | null>(null);
@@ -103,7 +100,9 @@ function SkillDrawer({
 function SkillItem({ text }: { text: string }) {
   return (
     <div className="flex hover:text-neutral-400">
-      <span className="rounded-full px-2 py-1 ring-2 ring-700">{text}</span>
+      <span className="rounded-full px-2 py-1 ring-2 ring-700">
+        {text}
+      </span>
     </div>
   );
 }
