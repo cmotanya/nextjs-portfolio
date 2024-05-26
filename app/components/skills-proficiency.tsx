@@ -20,12 +20,14 @@ function ProfessionalSkills() {
         toggleDrawer={toggleDrawer}
         skillName="Programming:"
       >
-        <SkillItem text="HTML" />
-        <SkillItem text="CSS" />
+        <SkillItem text="HTML5" />
+        <SkillItem text="CSS3" />
         <SkillItem text="JavaScript" />
         <SkillItem text="AstroJS" />
         <SkillItem text="ReactJS" />
         <SkillItem text="NextJS" />
+        <SkillItem text="Python" />
+        <SkillItem text="Pandas" />
       </SkillDrawer>
 
       <SkillDrawer
@@ -100,9 +102,7 @@ function SkillDrawer({
 function SkillItem({ text }: { text: string }) {
   return (
     <div className="flex hover:text-neutral-400">
-      <span className="rounded-full px-2 py-1 ring-2 ring-700">
-        {text}
-      </span>
+      <span className="rounded-full px-2 py-1 ring-2 ring-700">{text}</span>
     </div>
   );
 }
