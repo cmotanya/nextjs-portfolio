@@ -58,6 +58,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
             noValidate
             className="z-50 mx-auto flex w-full flex-col gap-3"
           >
+            <p className="md:hidden">Send me an email today:</p>
             <input
               {...register("name")}
               type="text"

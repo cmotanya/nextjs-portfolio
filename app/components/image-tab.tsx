@@ -38,7 +38,7 @@ const Tabs = ({ children }: TabsProps) => {
         return (
           <div
             key={index}
-            className="mx-auto mt-4 flex min-h-[15rem] grid-rows-2 flex-row flex-wrap justify-center gap-3 md:justify-start"
+            className="mx-auto mt-4 flex flex-row flex-wrap justify-center gap-3 xs:gap-2 md:justify-start"
           >
             {child.props.children}
           </div>
@@ -49,7 +49,7 @@ const Tabs = ({ children }: TabsProps) => {
 
   return (
     <div className="mx-auto mt-14">
-      <ul className="flex flex-row justify-center gap-3 md:gap-8">
+      <ul className="flex flex-row justify-center xs:gap-0 gap-3 md:gap-8">
         {renderTabs()}
       </ul>
       {renderContents()}

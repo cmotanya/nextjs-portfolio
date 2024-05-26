@@ -40,7 +40,7 @@ function About() {
           <h3 className="pb-3 text-xl font-semibold uppercase text-600">
             Education
           </h3>
-          <table className="mb-4 w-full max-w-full border-collapse rounded-md ring-2 ring-800">
+          {/* <table className="mb-4 w-full max-w-full border-collapse rounded-md ring-2 ring-800">
             <thead>
               <tr className="bg-800">
                 <th className="px-4 py-2 text-left">Degree</th>
@@ -62,7 +62,38 @@ function About() {
                 <td className="px-4 py-2">2009</td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
+
+          {/* University college */}
+          <div className="relative mb-40">
+            <span className="before:absolute before:text-3xl before:text-600 before:content-['•']"></span>
+            <div className="ml-6">
+              <p>Bachelor of BIT</p>
+              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+                JKUAT, 2016
+              </span>
+            </div>
+
+            {/* Secondary school */}
+            <span className="before:absolute before:left-[0.22rem] before:top-7 before:h-[4.2rem] before:w-[0.12rem] before:bg-800"></span>
+            <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-600 before:content-['•']"></span>
+            <div className="ml-6 mt-6">
+              <p>High School Certificate</p>
+              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+                Nyamagwa Boys&apos; School, 2009
+              </span>
+            </div>
+
+            {/* Primary school */}
+            <span className="before:absolute before:left-[0.22rem] before:top-[7.2rem] before:h-[4.2rem] before:w-[0.12rem] before:bg-800"></span>
+            <span className="before:absolute before:top-[10.8rem] before:text-3xl before:text-600 before:content-['•']"></span>
+            <div className="ml-6 mt-6">
+              <p>Primary School Certificate</p>
+              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+                Nyamagwa Boys&apos; School, 1997
+              </span>
+            </div>
+          </div>
         </div>
 
         <div>

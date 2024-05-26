@@ -14,9 +14,10 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        xs: "399px",
+        xs: "300px",
+        sm: "400px",
+        md: "768px",
         lg: "1024.5px",
-        ...defaultTheme.screens,
       },
       /* font-family */
       fontFamily: {
@@ -35,7 +36,7 @@ const config: Config = {
         "800": "var(--custom-800)",
         "900": "var(--custom-900)",
 
-        "bgClr": "var(--bg-clr)",
+        bgClr: "var(--bg-clr)",
         "primary-clr": "var(--primary)",
         "secondary-clr": "var(--secondary)",
         "accent-clr": "var(--accent)",

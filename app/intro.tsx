@@ -33,16 +33,16 @@ const Intro = () => {
         />
       </div>
 
-      <div className="mx-auto mt-10 max-w-3xl sm:flex sm:justify-center lg:justify-start">
+      <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-5 md:flex-row">
         <a
           href="#contact"
-          className="text-bold mb-4 mr-3 flex w-full items-center justify-center rounded-md border border-transparent bg-primary-clr px-8 py-3 text-base font-semibold uppercase text-200 hover:bg-blue-800 sm:mb-0 md:px-10 md:py-4 md:text-lg"
+          className="flex-1 rounded-full bg-800 px-6 py-3 text-center transition hover:bg-neutral-700/50 active:scale-105"
         >
           Get in Touch
         </a>
         <a
           href="#projects"
-          className="flex w-full items-center justify-center rounded-md border border-transparent bg-slate-800/50 px-8 py-3 text-base font-semibold uppercase text-400 hover:bg-slate-800 md:px-10 md:py-4 md:text-lg"
+          className="flex-1 rounded-full px-6 py-3 text-center ring-2 ring-700 transition hover:bg-neutral-800/50 hover:ring-0 active:scale-105"
         >
           View Projects
         </a>
