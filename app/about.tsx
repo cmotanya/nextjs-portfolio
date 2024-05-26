@@ -65,7 +65,7 @@ function About() {
           </table> */}
 
           {/* University college */}
-          <div className="relative mb-40">
+          <div className="relative">
             <span className="before:absolute before:text-3xl before:text-600 before:content-['•']"></span>
             <div className="ml-6">
               <p>Bachelor of BIT</p>
@@ -90,7 +90,7 @@ function About() {
             <div className="ml-6 mt-6">
               <p>Primary School Certificate</p>
               <span className="-mt-2 rounded-md bg-800 p-1 text-500">
-                Nyamagwa Boys&apos; School, 1997
+                Kosawo Primary School, 1997
               </span>
             </div>
           </div>
@@ -107,14 +107,14 @@ function About() {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-slate-400 transition-all active:scale-105 md:max-w-fit"
+              className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-slate-400 transition-all active:scale-105"
             >
               <IconBrandLinkedin className="text-[#0a66c2]" />
               LinkedIn
             </Link>
             <button
               onClick={handleDownload}
-              className="flex items-center justify-center gap-2 rounded-full px-4 py-3 ring-2 ring-700 transition-all hover:ring-800 active:scale-105 md:max-w-fit"
+              className="flex flex-1 items-center justify-center gap-2 rounded-full px-4 py-3 ring-2 ring-700 transition-all hover:ring-800 active:scale-105"
             >
               <IconFile />
               Download CV
