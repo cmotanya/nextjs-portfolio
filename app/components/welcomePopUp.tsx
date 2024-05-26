@@ -39,7 +39,7 @@ const WelcomePopup = () => {
         </p>
         <button
           onClick={() => handleClose()}
-          className="rounded-full bg-700 px-3 py-2 justify-center w-full md:w-fit flex mx-auto"
+          className="mx-auto flex w-full justify-center rounded-full bg-700 px-3 py-2 md:w-fit md:py-1"
         >
           Close
         </button>
