@@ -12,8 +12,8 @@ export const images = [
   },
   {
     src: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Harriet Marie",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga debitis aperiam, consequatur iste quidem rem!",
+    title: "Apollo",
+    text: "Our construction site was being targeted frequently by vandals until we hired him for mobile CCTV surveillance. It has helped increase site safety and security immensely.",
   },
   {
     src: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
