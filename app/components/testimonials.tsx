@@ -43,7 +43,7 @@ const Carousel = () => {
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>
-      <div className="relative mx-auto h-[23rem] w-full overflow-hidden rounded-md md:h-[19rem] md:w-[90%]">
+      <div className="relative mx-auto h-[23rem] w-full overflow-hidden rounded-md md:h-[20rem] md:w-[90%]">
         <Suspense>
           <div className="relative size-full">
             {images.map(({ src, title, text }, index) => (

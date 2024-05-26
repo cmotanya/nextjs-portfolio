@@ -13,7 +13,7 @@ export const images = [
   {
     src: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apollo",
-    text: "Our construction site was being targeted frequently by vandals until we hired him for mobile CCTV surveillance. It has helped increase site safety and security immensely.",
+    text: "Our construction site was being targeted by vandals until we hired him to install CCTV surveillance which has helped increase site safety.",
   },
   {
     src: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
