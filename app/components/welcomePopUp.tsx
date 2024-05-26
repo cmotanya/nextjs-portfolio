@@ -1,14 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import confetti from "canvas-confetti";
-import { date } from "zod";
 
 const WelcomePopup = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
   const canvasRef = useRef(null);
+
   const handleClose = () => {
     const popup = document.getElementById("welcome-popup");
     if (popup) {
       popup.style.display = "none";
     }
+    setShowPopUp(false);
   };
 
   useEffect(() => {
@@ -43,11 +45,12 @@ const WelcomePopup = () => {
           })();
 
           localStorage.setItem("visited", "true");
+          setShowPopUp(true);
         }
       }
     }
   }, []);
-  return (
+  return showPopUp ? (
     <div
       id="welcome-popup"
       className="fixed inset-0 z-50 m-auto max-h-fit max-w-[90%] rounded-md bg-800 p-4 md:max-w-md"
@@ -70,6 +73,6 @@ const WelcomePopup = () => {
         </button>
       </div>
     </div>
-  );
+  ) : null;
 };
 export default WelcomePopup;
