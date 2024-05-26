@@ -106,7 +106,7 @@ function Experience() {
                   priority
                   width="300"
                   height="300"
-                  className="rounded-md object-cover xs:h-[6.5rem] xs:w-[8rem] sm:h-[8rem] sm:w-[9.5rem] md:h-[11rem] md:w-[13rem]"
+                  className="rounded-md object-cover xs:h-[7rem] xs:w-[9rem] sm:h-[9rem] sm:w-[11rem] md:h-[11rem] md:w-[13rem]"
                 />
               ),
           )}
@@ -126,7 +126,7 @@ function Experience() {
                   priority
                   width="300"
                   height="300"
-                  className="rounded-md object-cover xs:h-[6.5rem] xs:w-[8rem] sm:h-[8rem] sm:w-[9.5rem] md:h-[11rem] md:w-[13rem]"
+                  className="rounded-md object-cover xs:h-[7rem] xs:w-[9rem] sm:h-[9rem] sm:w-[11rem] md:h-[11rem] md:w-[13rem]"
                 />
               ),
           )}
