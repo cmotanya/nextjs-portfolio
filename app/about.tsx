@@ -15,7 +15,7 @@ function About() {
   }, []);
 
   return (
-    <section id="about" className="mt-0 font-semibold md:mt-10">
+    <section id="about" className="mt-6 font-semibold md:mt-10">
       <h1 className="py-1 font-extrabold uppercase text-600">About.</h1>
 
       <div className="flex basis-full flex-col justify-center space-y-6 pt-2">

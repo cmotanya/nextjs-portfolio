@@ -173,7 +173,7 @@ function NavLink({
       href={href}
       onClick={onClink}
       className={cn(
-        "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl uppercase hover:text-slate-300 md:text-lg",
+        "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl hover:text-300 md:text-2xl",
         active
           ? "bg-800 text-neutral-300 md:bg-transparent"
           : "text-neutral-400/50",

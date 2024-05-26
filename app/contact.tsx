@@ -66,7 +66,7 @@ function Contact() {
   const accessKey = "2e3adbbc-1bf9-439a-b88a-d85e13ac63fe";
 
   return (
-    <section id="contact" className=" mt-0 pb-24 font-semibold md:mt-10">
+    <section id="contact" className=" mt-6 pb-24 font-semibold md:mt-10">
       <h1 className="py-3 text-4xl font-extrabold uppercase text-600 md:pt-0">
         Contact{" "}
       </h1>
