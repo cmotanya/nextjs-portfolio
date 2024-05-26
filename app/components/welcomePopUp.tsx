@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import confetti from "canvas-confetti";
+import { date } from "zod";
 
 const WelcomePopup = () => {
   const canvasRef = useRef(null);
@@ -13,6 +14,9 @@ const WelcomePopup = () => {
   useEffect(() => {
     const hasVisited = localStorage.getItem("visited");
 
+    const duration = 30 * 100;
+    const end = Date.now() + duration;
+
     if (!hasVisited) {
       const canvas = canvasRef.current;
       if (canvas) {
@@ -20,7 +24,28 @@ const WelcomePopup = () => {
           resize: true,
           useWorker: true,
         });
-        myConfetti({ particleCount: 100, spread: 100 });
+
+        (function timestamp() {
+          myConfetti({
+            particleCount: 7,
+            spread: 100,
+            angle: 60,
+            startVelocity: 30,
+            origin: { x: 0 },
+          });
+          myConfetti({
+            particleCount: 7,
+            spread: 100,
+            angle: 120,
+            startVelocity: 30,
+            origin: { x: 1 },
+          });
+
+          if (Date.now() < end) {
+            requestAnimationFrame(timestamp);
+          }
+        })();
+
         localStorage.setItem("visited", "true");
       }
     }
@@ -39,7 +64,7 @@ const WelcomePopup = () => {
         </p>
         <button
           onClick={() => handleClose()}
-          className="mx-auto flex w-full justify-center rounded-full bg-700 px-3 py-2 md:w-fit md:py-1"
+          className="mx-auto flex w-full justify-center rounded-full bg-red-600 px-4 py-2 text-200 active:scale-105 md:w-fit md:py-1"
         >
           Close
         </button>
