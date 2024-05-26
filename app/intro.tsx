@@ -14,8 +14,8 @@ const Intro = () => {
             👋 Hi there, I&apos;m Cornelius
           </p>
           <h2 className="text-4xl font-bold"></h2>
-          <p className="h-[3.6rem] text-2xl uppercase text-yellow-600 md:h-auto">
-            <TextAnimation />
+          <p className="font-caveat h-[3.6rem] text-2xl uppercase text-fuchsia-600 md:h-auto">
+            Expert in <TextAnimation />
           </p>
           <p className="mb-8">
             As an IT graduate with a passion for technology, I help businesses
@@ -55,17 +55,18 @@ const TextAnimation = () => {
   return (
     <TypeAnimation
       sequence={[
-        "Expert in front-end development.",
+        "front-end development.",
         1500,
-        "Expert in CCTV installation.",
+        "CCTV installation.",
         1500,
-        "Expert in computers & network.",
+        "computers & network.",
         1500,
-        "Expert in data analysis.",
+        "data analysis.",
         1500,
       ]}
       wrapper="span"
       speed={50}
+      className="text-600"
       repeat={Infinity}
     />
   );

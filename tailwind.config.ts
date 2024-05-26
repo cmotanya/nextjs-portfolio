@@ -1,3 +1,4 @@
+import { Montserrat } from "next/font/google";
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
@@ -22,7 +23,8 @@ const config: Config = {
       /* font-family */
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
-        ubuntu: ["Ubuntu", "sans"],
+        montserrat: ["Montserrat", "sans"],
+        caveat: ["caveat", "sans"],
       },
 
       /* colors */

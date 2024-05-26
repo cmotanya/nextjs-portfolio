@@ -32,7 +32,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="font-ubuntu absolute bottom-0 flex w-full flex-col gap-1 bg-slate-800/30 py-1 md:flex-row">
+    <footer className="absolute bottom-0 flex w-full flex-col gap-1 bg-neutral-800/50 py-1 font-bold md:flex-row">
       <div className="relative mx-auto flex flex-wrap gap-2 md:justify-normal">
         <FooterIcon
           icon={<IconBrandFacebook color="#1877F2" />}
@@ -51,12 +51,12 @@ function Footer() {
           tooltipText="Github"
         />
       </div>
-      <div className="mx-auto flex flex-col justify-center text-balance text-center text-sm">
-        <p className="font-semibold uppercase leading-normal text-slate-500">
+      <div className="font-montserrat mx-auto flex flex-col justify-center text-balance text-center text-sm">
+        <p className="font-bold uppercase leading-normal text-500">
           &copy; {currentYear} designed and developed with ❤️ by{" "}
           <Link
             href={"#about"}
-            className="inline-block underline underline-offset-1 hover:cursor-pointer hover:text-slate-400 hover:no-underline"
+            className="inline-block hover:cursor-pointer hover:text-400"
           >
             Cornelius Motanya.
           </Link>
