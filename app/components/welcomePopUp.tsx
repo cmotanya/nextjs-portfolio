@@ -2,11 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import confetti from "canvas-confetti";
 
 const WelcomePopup = () => {
-  const [showPopUp, setShowPopUp] = useState(false);
+  const [hasVisited, setHasVisited] = useState(
+    localStorage.getItem("visited") === "true",
+  );
   const canvasRef = useRef(null);
 
   const handleClose = () => {
-    setShowPopUp(false);
+    const popup = document.getElementById("welcome-popup");
+
+    if (popup) {
+      popup.remove();
+    }
   };
 
   useEffect(() => {
@@ -41,20 +47,12 @@ const WelcomePopup = () => {
           }
         })();
 
-        try {
-          localStorage.setItem("visited", "true");
-          console.log("localStorage set to 'visited'");
-        } catch (err) {
-          console.error("Failed to set localStorage 'visited'", err);
-        }
-        setShowPopUp(true);
-      } else {
-        console.error("Canvas element was not found");
+        localStorage.setItem("visited", "true");
       }
     }
-    // }
-  }, []);
-  return showPopUp ? (
+  }, [hasVisited]);
+
+  return !hasVisited ? (
     <div
       id="welcome-popup"
       className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm"
@@ -66,7 +64,7 @@ const WelcomePopup = () => {
       <div className="relative z-[999999] max-h-fit max-w-[90%] rounded-md bg-800 p-4 md:max-w-md">
         <div className="space-y-3">
           <h2 className="text-center text-2xl font-semibold uppercase">
-            hello and Welcome
+            Welcome
           </h2>
           <p className="text-balance">
             Thank you for visiting my portfolio. I am delighted to have you
