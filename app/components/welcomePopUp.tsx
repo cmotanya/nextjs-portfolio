@@ -6,51 +6,55 @@ const WelcomePopup = () => {
   const canvasRef = useRef(null);
 
   const handleClose = () => {
-    // const popup = document.getElementById("welcome-popup");
-    // if (popup) {
-    //   popup.style.display = "none";
-    // }
     setShowPopUp(false);
   };
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("visited");
-    const now = Date.now();
-    const lastVisitTime = localStorage.getItem("lastVisitedTime");
+    console.log(hasVisited, "hasVisited");
 
-    const duration = 10 * 1000;
+    const duration = 4 * 1000;
     const end = Date.now() + duration;
 
-    // if (!lastVisitTime || now - parseInt(lastVisitTime) < 24 * 60 * 60 * 1000) {
-    // if (!hasVisited) {
-    const canvas = canvasRef.current;
-    if (canvas) {
-      const myConfetti = confetti.create(canvas, {
-        resize: true,
-        useWorker: true,
-      });
+    if (!hasVisited) {
+      console.log("first visit detected");
 
-      (function timestamp() {
-        myConfetti({
-          particleCount: 5,
-          spread: 360,
-          angle: 60,
-          startVelocity: 30,
-          origin: { x: Math.random(), y: Math.random() - 0.2 },
+      const canvas = canvasRef.current;
+      if (canvas) {
+        console.log("canvas element has been found, initializing confetti");
+        const myConfetti = confetti.create(canvas, {
+          resize: true,
+          useWorker: true,
         });
 
-        if (Date.now() < end) {
-          requestAnimationFrame(timestamp);
-        }
-      })();
+        (function timestamp() {
+          myConfetti({
+            particleCount: 5,
+            spread: 360,
+            angle: 60,
+            startVelocity: 30,
+            origin: { x: Math.random(), y: Math.random() - 0.2 },
+          });
 
-      localStorage.setItem("visited", "true");
-      setShowPopUp(true);
+          if (Date.now() < end) {
+            requestAnimationFrame(timestamp);
+          }
+        })();
+
+        try {
+          localStorage.setItem("visited", "true");
+          console.log("localStorage set to 'visited'");
+        } catch (err) {
+          console.error("Failed to set localStorage 'visited'", err);
+        }
+        setShowPopUp(true);
+      } else {
+        console.error("Canvas element was not found");
+      }
     }
     // }
-    // }
   }, []);
-  return (
+  return showPopUp ? (
     <div
       id="welcome-popup"
       className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm"
@@ -78,6 +82,6 @@ const WelcomePopup = () => {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 export default WelcomePopup;
