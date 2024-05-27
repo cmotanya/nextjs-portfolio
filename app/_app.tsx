@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Contact from "./contact";
 import Footer from "./footer";
 import Intro from "./intro";
