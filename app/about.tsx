@@ -84,7 +84,7 @@ function About() {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-slate-400 transition-all active:scale-105"
+              className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-400 transition-all active:scale-105"
             >
               <IconBrandLinkedin className="text-[#0a66c2]" />
               LinkedIn

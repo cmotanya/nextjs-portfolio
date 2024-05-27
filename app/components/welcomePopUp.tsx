@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import confetti from "canvas-confetti";
 
 const WelcomePopup = () => {
-  const [hasVisited, setHasVisited] = useState(
-    localStorage.getItem("visited") === "true",
-  );
+  const [hasVisited, _] = useState(localStorage.getItem("visited") === "true");
   const canvasRef = useRef(null);
 
   const handleClose = () => {
@@ -17,17 +15,13 @@ const WelcomePopup = () => {
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("visited");
-    console.log(hasVisited, "hasVisited");
 
     const duration = 4 * 1000;
     const end = Date.now() + duration;
 
     if (!hasVisited) {
-      console.log("first visit detected");
-
       const canvas = canvasRef.current;
       if (canvas) {
-        console.log("canvas element has been found, initializing confetti");
         const myConfetti = confetti.create(canvas, {
           resize: true,
           useWorker: true,

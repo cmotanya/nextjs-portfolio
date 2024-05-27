@@ -1,7 +1,10 @@
+"use client";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import type { Metadata } from "next";
 import "./globals.css";
+import { useState } from "react";
 
 /* Primary Meta Tags */
 export const metadata: Metadata = {
@@ -15,9 +18,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  function toggleTheme() {
+    setIsDarkTheme((prevMode) => !prevMode);
+  }
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <button>Theme</button>
+      </body>
     </html>
   );
 }
