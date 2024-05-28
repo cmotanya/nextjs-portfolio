@@ -32,7 +32,8 @@ function Experience() {
           <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
-                <IconBuilding /> High School Teacher
+                <IconBuilding />{" "}
+                <span className="text-bright-clr">High School Teacher</span>
               </p>
               <span className="ml-8 inline-block rounded-md bg-primary-clr px-3 text-300 dark:bg-neutral-900/50">
                 2017
@@ -47,7 +48,8 @@ function Experience() {
           <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
-                <IconBuildingStore /> Ken Computers
+                <IconBuildingStore />{" "}
+                <span className="text-primary-clr">Ken Computers</span>
               </p>
               <span className="bg-bright-clr ml-8 inline-block rounded-md px-2 text-300 dark:bg-neutral-900/50">
                 2019
