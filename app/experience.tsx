@@ -49,7 +49,7 @@ function Experience() {
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
               </p>
-              <span className="ml-8 inline-block rounded-md bg-accent-clr px-2 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-bright-clr text-300 px-2 dark:bg-neutral-900/50">
                 2019
               </span>
             </div>
