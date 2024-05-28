@@ -29,12 +29,12 @@ function Experience() {
         </p>
 
         <div className="space-y-3">
-          <div className="grid justify-between rounded-md bg-accent-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
               </p>
-              <span className="ml-8 inline-block rounded-full bg-bright-clr text-300 px-3 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-primary-clr px-3 text-300 dark:bg-neutral-900/50">
                 2017
               </span>
             </div>
@@ -44,12 +44,12 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
               </p>
-              <span className="ml-8 inline-block rounded-md bg-bright-clr text-300 px-2 dark:bg-neutral-900/50">
+              <span className="bg-bright-clr ml-8 inline-block rounded-md px-2 text-300 dark:bg-neutral-900/50">
                 2019
               </span>
             </div>
