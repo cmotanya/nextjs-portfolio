@@ -1,11 +1,12 @@
 import Link from "next/link";
+import NotFoundIcon from "../public/svg/not-found-icon.svg";
 
 function NotFound() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-center text-gray-300">
       <div className="mb-8">
-        <h1 className="text-9xl font-bold">404</h1>
-        {/* <p className="text-4xl font-semibold">Page Not Found</p> */}
+        {/* <h1 className="text-9xl font-bold">404</h1> */}
+        <NotFoundIcon />
       </div>
       <div className="mb-12">
         <p className="text-xl">

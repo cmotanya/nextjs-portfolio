@@ -7,7 +7,6 @@ import About from "./about";
 import Experience from "./experience";
 import TopArrowButton from "./components/top-arrow";
 import WelcomePopup from "./components/welcomePopUp";
-import { ThemeToggle } from "./components/toggle-theme";
 
 function Home() {
   return (
