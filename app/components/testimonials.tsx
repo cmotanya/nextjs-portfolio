@@ -54,7 +54,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-400 px-1 pt-4 md:gap-2 dark:bg-800">
+                <div className="relative flex h-full w-full flex-col bg-secondary-clr px-1 pt-4 md:gap-2 dark:bg-800">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}

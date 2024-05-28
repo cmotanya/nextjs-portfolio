@@ -19,14 +19,16 @@ function Experience() {
   return (
     <section id="experience" className="mt-6 font-semibold md:mt-10">
       <div>
-        <h1 className="py-2 font-extrabold uppercase text-600">Experience</h1>
-        <p className="md:pb-6">
+        <h1 className="text-bright-clr py-2 font-extrabold uppercase dark:text-600">
+          Experience
+        </h1>
+        <p className="md:pb-3">
           Through the period of my career both as employed and freelancing, lies
           a testament of immense skills gathered that have enabled me perform
           and provide solutions to unique problems that I encounter.
         </p>
 
-        <div className="mt-3 space-y-3">
+        <div className="space-y-3">
           <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">

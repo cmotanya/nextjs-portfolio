@@ -56,11 +56,13 @@
     --custom-950: #0a0a0a;
 
     --bg-clr: #040d12;
-    --primary: #023047;
-    --secondary: #8ecae6;
+    --primary: #003049;
+    --secondary: #669bbc;
     --accent: #219ebc;
+    --bright: #780000;
+    --light: #c1121f;
 
-    --mobile-menu-clr: #70669a;
+    /* --mobile-menu-clr: #70669a; */
   }
 
   * {

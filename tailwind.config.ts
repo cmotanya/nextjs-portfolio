@@ -43,6 +43,8 @@ const config: Config = {
         "primary-clr": "var(--primary)",
         "secondary-clr": "var(--secondary)",
         "accent-clr": "var(--accent)",
+        "bright-clr": "var(--bright)",
+        "light-clr": "var(--light)",
       } as ColorType,
 
       /* animation styles */
