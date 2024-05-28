@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Home from "./_app";
 import SkeletonUI from "./loader";
 import CachedContent from "./components/cache-content";
+import { ThemeContextProvider } from "./components/theme-provider";
+
+import "./globals.css";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,6 +48,8 @@ export default function App() {
       }
     />
   ) : (
-    <Home />
+    <ThemeContextProvider>
+      <Home />
+    </ThemeContextProvider>
   );
 }

@@ -27,7 +27,7 @@ function Experience() {
         </p>
 
         <div className="mt-3 space-y-3">
-          <div className="grid justify-between rounded-md bg-800 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
@@ -36,13 +36,13 @@ function Experience() {
                 2017
               </span>
             </div>
-            <p className="text-500">
+            <p className="dark:text-500">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptate, iusto?
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-800 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
@@ -51,13 +51,13 @@ function Experience() {
                 2019
               </span>
             </div>
-            <p className="text-500">
+            <p className="dark:text-500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Deserunt, amet?
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-800 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBriefcase /> Freelancing Gig
@@ -66,7 +66,7 @@ function Experience() {
                 2020
               </span>
             </div>
-            <p className="text-500">
+            <p className="dark:text-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               perferendis.
             </p>

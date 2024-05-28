@@ -46,7 +46,7 @@ function About() {
             <span className="before:absolute before:text-3xl before:text-600 before:content-['•']"></span>
             <div className="ml-6">
               <p>Bachelor of BIT</p>
-              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+              <span className="-mt-2 rounded-md bg-400 p-1 dark:bg-800 dark:text-500">
                 JKUAT, 2016
               </span>
             </div>
@@ -56,7 +56,7 @@ function About() {
             <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-600 before:content-['•']"></span>
             <div className="ml-6 mt-6">
               <p>High School Certificate</p>
-              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+              <span className="-mt-2 rounded-md bg-400 p-1 text-800 dark:bg-800 dark:text-500">
                 Nyamagwa Boys&apos; School, 2009
               </span>
             </div>
@@ -66,7 +66,7 @@ function About() {
             <span className="before:absolute before:top-[10.8rem] before:text-3xl before:text-600 before:content-['•']"></span>
             <div className="ml-6 mt-6">
               <p>Primary School Certificate</p>
-              <span className="-mt-2 rounded-md bg-800 p-1 text-500">
+              <span className="-mt-2 rounded-md bg-400 p-1 dark:bg-800 dark:text-500">
                 Kosawo Primary School, 1997
               </span>
             </div>

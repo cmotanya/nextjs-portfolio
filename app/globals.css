@@ -68,7 +68,7 @@
   }
 
   body {
-    @apply relative min-h-screen w-full bg-900 font-quicksand text-lg text-400;
+    @apply relative min-h-screen w-full bg-300 font-quicksand text-lg text-900 dark:bg-900 dark:text-400;
   }
 
   section {

@@ -32,7 +32,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="absolute bottom-0 flex w-full flex-col gap-1 bg-neutral-800/50 py-1 font-bold md:flex-row">
+    <footer className="absolute bottom-0 flex w-full flex-col gap-1 bg-700 dark:bg-neutral-800/50 py-1 font-bold md:flex-row">
       <div className="relative mx-auto flex flex-wrap gap-2 md:justify-normal">
         <FooterIcon
           icon={<IconBrandFacebook color="#1877F2" />}
@@ -52,7 +52,7 @@ function Footer() {
         />
       </div>
       <div className="font-montserrat mx-auto flex flex-col justify-center text-balance text-center text-sm">
-        <p className="font-bold uppercase leading-normal text-500">
+        <p className="font-bold uppercase leading-normal dark:text-500">
           &copy; {currentYear} designed and developed with ❤️ by{" "}
           <Link
             href={"#about"}
