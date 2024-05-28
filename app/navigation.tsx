@@ -5,7 +5,7 @@ import { nav_items } from "./lib/global_links";
 import { ThemeToggle } from "./components/toggle-theme";
 import MobileNav from "./components/mobile-nav";
 import DesktopNav from "./components/desktop-nav";
-import MobileMenu from "./mobile-hamburger-menu";
+import MobileMenu from "./components/mobile-hamburger-menu";
 import Link from "next/link";
 
 export default function Navigation() {
@@ -26,7 +26,9 @@ export default function Navigation() {
       className="absolute top-0 z-30 flex w-full flex-row items-center justify-between p-3 text-neutral-200 md:bg-800"
     >
       {/* --- Theme toggle. --- */}
-      <ThemeToggle />
+      <div>
+        <ThemeToggle />
+      </div>
 
       {/* Hamburger menu icon */}
       <MobileMenu

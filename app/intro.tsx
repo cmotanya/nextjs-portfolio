@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import { introImage } from "./lib/global_links";
+import TextAnimation from "./components/text-animation";
 
 const Intro = () => {
   return (
@@ -14,7 +14,7 @@ const Intro = () => {
             👋 Hi there, I&apos;m Cornelius
           </p>
           <h2 className="text-4xl font-bold"></h2>
-          <p className="font-caveat h-[3.6rem] text-2xl uppercase text-fuchsia-600 md:h-auto">
+          <p className="h-[3.6rem] font-caveat text-2xl uppercase text-fuchsia-600 md:h-auto">
             Expert in <TextAnimation />
           </p>
           <p className="mb-8">
@@ -36,39 +36,18 @@ const Intro = () => {
       <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-5 md:flex-row">
         <a
           href="#contact"
-          className="flex-1 rounded-full bg-800 px-6 py-3 text-center transition hover:bg-neutral-700/50 active:scale-105"
+          className="flex-1 rounded-full bg-primary-clr px-6 py-3 text-center text-200 transition active:scale-105 dark:bg-800 dark:hover:bg-neutral-700/50"
         >
           Get in Touch
         </a>
         <a
           href="#projects"
-          className="flex-1 rounded-full px-6 py-3 text-center ring-2 ring-600 transition hover:ring-800 active:scale-105"
+          className="flex-1 rounded-full bg-secondary-clr px-6 py-3 text-center ring-600 transition hover:ring-800 active:scale-105 dark:ring-2"
         >
           View Projects
         </a>
       </div>
     </section>
-  );
-};
-
-const TextAnimation = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        "front-end development.",
-        1500,
-        "CCTV installation.",
-        1500,
-        "computers & network.",
-        1500,
-        "data analysis.",
-        1500,
-      ]}
-      wrapper="span"
-      speed={50}
-      className="text-600"
-      repeat={Infinity}
-    />
   );
 };
 

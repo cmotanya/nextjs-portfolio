@@ -7,7 +7,7 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="absolute left-4 top-4 z-[500] text-6xl"
+      className="absolute  left-4 top-1/2 -translate-y-1/2 z-[500] text-6xl"
     >
       {theme == "dark" ? (
         <IconSun className="xs:size-8 md:size-6" />

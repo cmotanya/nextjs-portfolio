@@ -1,5 +1,5 @@
 import { IconX, IconMenu2 } from "@tabler/icons-react";
-import { cn } from "./utils/cn";
+import { cn } from "../utils/cn";
 
 const MobileMenu = ({
   onclick,
