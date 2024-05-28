@@ -27,12 +27,12 @@ function Experience() {
         </p>
 
         <div className="mt-3 space-y-3">
-          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
+          <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding /> High School Teacher
               </p>
-              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-accent-clr px-2 dark:bg-neutral-900/50">
                 2017
               </span>
             </div>
@@ -42,12 +42,12 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
+          <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore /> Ken Computers
               </p>
-              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-accent-clr px-2 dark:bg-neutral-900/50">
                 2019
               </span>
             </div>
@@ -57,12 +57,12 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-400 p-2 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%] dark:bg-800">
+          <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBriefcase /> Freelancing Gig
               </p>
-              <span className="ml-8 inline-block rounded-md bg-neutral-900/50 px-2">
+              <span className="ml-8 inline-block rounded-md bg-accent-clr px-2 dark:bg-neutral-900/50">
                 2020
               </span>
             </div>

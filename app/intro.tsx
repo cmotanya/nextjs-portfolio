@@ -42,7 +42,7 @@ const Intro = () => {
         </a>
         <a
           href="#projects"
-          className="flex-1 rounded-full bg-secondary-clr px-6 py-3 text-center ring-600 transition hover:ring-800 active:scale-105 dark:ring-2"
+          className="flex-1 rounded-full bg-secondary-clr px-6 py-3 text-center ring-600 transition hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2"
         >
           View Projects
         </a>

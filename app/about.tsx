@@ -43,30 +43,30 @@ function About() {
 
           {/* University college */}
           <div className="relative">
-            <span className="before:absolute before:text-3xl before:text-600 before:content-['•']"></span>
+            <span className="before:absolute before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6">
               <p>Bachelor of BIT</p>
-              <span className="-mt-2 rounded-md bg-400 p-1 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-accent-clr p-1 dark:bg-800 dark:text-500">
                 JKUAT, 2016
               </span>
             </div>
 
             {/* Secondary school */}
-            <span className="before:absolute before:left-[0.22rem] before:top-7 before:h-[4.2rem] before:w-[0.12rem] before:bg-800"></span>
-            <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-600 before:content-['•']"></span>
+            <span className="before:absolute before:left-[0.26rem] before:top-[1.6rem] before:h-[4.5rem] before:w-[0.12rem] before:bg-700 dark:before:bg-800"></span>
+            <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6 mt-6">
               <p>High School Certificate</p>
-              <span className="-mt-2 rounded-md bg-400 p-1 text-800 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-accent-clr p-1 text-800 dark:bg-800 dark:text-500">
                 Nyamagwa Boys&apos; School, 2009
               </span>
             </div>
 
             {/* Primary school */}
-            <span className="before:absolute before:left-[0.22rem] before:top-[7.2rem] before:h-[4.2rem] before:w-[0.12rem] before:bg-800"></span>
-            <span className="before:absolute before:top-[10.8rem] before:text-3xl before:text-600 before:content-['•']"></span>
+            <span className="before:absolute before:left-[0.26rem] before:top-[7.0rem] before:h-[4.6rem] before:w-[0.12rem] before:bg-600 dark:before:bg-700"></span>
+            <span className="before:absolute before:top-[10.9rem] before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6 mt-6">
               <p>Primary School Certificate</p>
-              <span className="-mt-2 rounded-md bg-400 p-1 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-accent-clr p-1 dark:bg-800 dark:text-500">
                 Kosawo Primary School, 1997
               </span>
             </div>
@@ -84,14 +84,14 @@ function About() {
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-800 px-4 py-3 text-400 transition-all active:scale-105"
+              className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-secondary-clr px-4 py-3 transition-all active:scale-105 dark:bg-800 dark:text-400"
             >
               <IconBrandLinkedin className="text-[#0a66c2]" />
               LinkedIn
             </Link>
             <button
               onClick={handleDownload}
-              className="flex flex-1 items-center justify-center gap-2 rounded-full px-4 py-3 ring-2 ring-700 transition-all hover:ring-800 active:scale-105"
+              className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-200 ring-700 transition-all hover:ring-800 active:scale-105 dark:ring-2"
             >
               <IconFile />
               Download CV
