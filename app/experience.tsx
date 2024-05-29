@@ -19,7 +19,7 @@ function Experience() {
   return (
     <section id="experience" className="mt-6 font-semibold md:mt-10">
       <div>
-        <h1 className="text-bright-clr py-2 font-extrabold uppercase dark:text-600">
+        <h1 className="py-2 font-extrabold uppercase text-bright-clr dark:text-600">
           Experience
         </h1>
         <p className="md:pb-3">
@@ -49,9 +49,9 @@ function Experience() {
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore />{" "}
-                <span className="text-primary-clr">Ken Computers</span>
+                <span className="text-bright-clr">Ken Computers</span>
               </p>
-              <span className="bg-bright-clr ml-8 inline-block rounded-md px-2 text-300 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-secondary-clr px-2 dark:bg-neutral-900/50">
                 2019
               </span>
             </div>
@@ -61,12 +61,13 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-secondary-clr p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
-                <IconBriefcase /> Freelancing Gig
+                <IconBriefcase />{" "}
+                <span className="text-bright-clr">Freelancing Gig</span>
               </p>
-              <span className="ml-8 inline-block rounded-md bg-accent-clr px-2 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-secondary-clr px-2 dark:bg-neutral-900/50">
                 2020
               </span>
             </div>

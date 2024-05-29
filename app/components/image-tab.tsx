@@ -17,7 +17,7 @@ const Tabs = ({ children }: TabsProps) => {
   const renderTabs = () => {
     return children.map((child, index) => {
       const isActive = index === isActiveTab;
-      const tabsClass = isActive ? "bg-neutral-800" : "";
+      const tabsClass = isActive ? "bg-secondary-clr" : "";
       return (
         <li
           key={index}
