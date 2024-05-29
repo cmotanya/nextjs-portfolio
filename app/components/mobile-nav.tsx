@@ -26,8 +26,8 @@ function NavLink({
       className={cn(
         "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl hover:text-300 md:text-2xl",
         active
-          ? "bg-800 text-neutral-300 md:bg-transparent"
-          : "text-neutral-400/50",
+          ? "bg-accent-clr text-800 dark:bg-800 dark:text-300 md:bg-transparent"
+          : "dark:text-neutral-400/50",
       )}
     >
       {children}
@@ -58,7 +58,7 @@ const MobileNav = ({
   return (
     <nav
       className={cn(
-        "absolute right-0 top-[4.2rem] z-40 h-[calc(100vh-4rem)] min-h-svh w-full overflow-hidden rounded-md bg-900 transition-transform duration-300 md:hidden",
+        "absolute right-0 top-[4.2rem] z-40 h-[calc(100vh-4rem)] min-h-svh w-full overflow-hidden rounded-md bg-secondary-clr transition-transform duration-300 dark:bg-900 md:hidden",
         isMenuOpen ? "translate-x-0" : "translate-x-full",
         !isMenuOpen && "hidden",
       )}
@@ -76,7 +76,7 @@ const MobileNav = ({
             >
               <div
                 className={cn(
-                  "transform-transition flex items-center gap-x-3 text-400 duration-300 active:translate-x-2",
+                  "transform-transition flex items-center gap-x-3 font-semibold text-800 duration-300 active:translate-x-2 dark:text-400",
                   isMenuOpen && `delay-${index * 100}`,
                 )}
               >
@@ -91,7 +91,7 @@ const MobileNav = ({
       </ul>
 
       {/* --- Mobile button link for contact. --- */}
-      <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-neutral-800/50 px-4 py-3 text-2xl uppercase text-400 md:hidden">
+      <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-bright-clr px-4 py-3 text-2xl uppercase text-300 dark:bg-neutral-800/50 dark:text-400 md:hidden">
         <Link
           href="./assets/Resume.pdf"
           target="_blank"
@@ -103,7 +103,7 @@ const MobileNav = ({
       </button>
 
       {/* Download resume for mobile devices. */}
-      <button className="absolute bottom-[10rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-neutral-800/50 px-4 py-3 text-2xl uppercase text-400 md:hidden">
+      <button className="absolute bottom-[10rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-bright-clr px-4 py-3 text-2xl uppercase text-300 dark:bg-neutral-800/50 dark:text-400 md:hidden">
         <Link
           href="./assets/Resume.pdf"
           target="_blank"

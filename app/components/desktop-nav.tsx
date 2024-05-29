@@ -20,8 +20,8 @@ function NavLink({
       className={cn(
         "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl hover:text-300 md:text-2xl",
         active
-          ? "bg-800 text-neutral-300 md:bg-transparent"
-          : "text-neutral-400/50",
+          ? "bg-800 font-semibold text-300 md:bg-transparent"
+          : "font-semibold text-800 dark:text-neutral-400/50",
       )}
     >
       {children}
@@ -42,7 +42,7 @@ const DesktopNav = ({
         {nav_items.map((item) => (
           <li
             key={item.name}
-            className="relative flex h-[3.5ch] w-[11ch] justify-center overflow-hidden py-2"
+            className="relative flex h-[3.5ch] w-[13ch] justify-center overflow-hidden py-2"
           >
             <NavLink
               href={item.link}

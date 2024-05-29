@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <header
       ref={headerRef}
-      className="absolute top-0 z-30 flex w-full flex-row items-center justify-between p-3 text-neutral-200 md:bg-800"
+      className="absolute top-0 z-30 flex w-full flex-row items-center justify-between bg-secondary-clr p-3 text-neutral-200 md:bg-accent-clr dark:md:bg-800"
     >
       {/* --- Theme toggle. --- */}
       <div>
