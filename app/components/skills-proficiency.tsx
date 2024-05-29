@@ -89,7 +89,7 @@ function SkillDrawer({
             animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="flex flex-wrap gap-3 pt-2 group-hover:text-600 dark:text-400 dark:group-hover:text-neutral-600"
+            className="flex flex-wrap gap-3 pt-2 group-hover:text-600 dark:text-600 dark:group-hover:text-neutral-600"
           >
             {children}
           </motion.div>
@@ -102,7 +102,7 @@ function SkillDrawer({
 function SkillItem({ text }: { text: string }) {
   return (
     <div className="flex hover:text-900 dark:hover:text-neutral-400">
-      <span className="rounded-full bg-400 px-2 py-1 ring-700 dark:ring-2">
+      <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">
         {text}
       </span>
     </div>

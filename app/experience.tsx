@@ -33,9 +33,11 @@ function Experience() {
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuilding />{" "}
-                <span className="text-bright-clr">High School Teacher</span>
+                <span className="text-bright-clr dark:text-500">
+                  High School Teacher
+                </span>
               </p>
-              <span className="ml-8 inline-block rounded-md bg-primary-clr px-3 text-300 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-primary-clr px-3 text-300 dark:bg-neutral-900/50 dark:text-600">
                 2017
               </span>
             </div>
@@ -49,9 +51,11 @@ function Experience() {
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBuildingStore />{" "}
-                <span className="text-bright-clr">Ken Computers</span>
+                <span className="text-bright-clr dark:text-500">
+                  Ken Computers
+                </span>
               </p>
-              <span className="ml-8 inline-block rounded-md bg-primary-clr px-2 text-200 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-primary-clr px-2 text-200 dark:bg-neutral-900/50 dark:text-600">
                 2019
               </span>
             </div>
@@ -65,9 +69,11 @@ function Experience() {
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBriefcase />{" "}
-                <span className="text-bright-clr">Freelancing Gig</span>
+                <span className="text-bright-clr dark:text-500">
+                  Freelancing Gig
+                </span>
               </p>
-              <span className="ml-8 inline-block rounded-md bg-primary-clr px-2 text-200 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-primary-clr px-2 text-200 dark:bg-neutral-900/50 dark:text-600">
                 2020
               </span>
             </div>

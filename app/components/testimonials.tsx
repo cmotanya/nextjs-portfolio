@@ -39,7 +39,9 @@ const Carousel = () => {
 
   return (
     <div className="pt-6">
-      <h2 className="pt-4 text-2xl uppercase text-light-clr">Testimonials</h2>
+      <h2 className="pt-4 text-2xl uppercase text-light-clr dark:text-600">
+        Testimonials
+      </h2>
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>

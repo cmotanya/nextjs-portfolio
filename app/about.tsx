@@ -16,13 +16,13 @@ function About() {
 
   return (
     <section id="about" className="mt-6 font-semibold md:mt-10">
-      <h1 className="text-bright-clr py-1 font-extrabold uppercase dark:text-600">
+      <h1 className="py-1 font-extrabold uppercase text-bright-clr dark:text-600">
         About.
       </h1>
 
       <div className="flex basis-full flex-col justify-center space-y-6 pt-2">
         <div>
-          <h3 className="text-light-clr text-xl font-semibold uppercase dark:text-600">
+          <h3 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
             Background
           </h3>
 
@@ -39,7 +39,7 @@ function About() {
           </p>
         </div>
         <div>
-          <h3 className="text-light-clr text-xl font-semibold uppercase dark:text-600">
+          <h3 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
             Education
           </h3>
 
@@ -48,7 +48,7 @@ function About() {
             <span className="before:absolute before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6">
               <p>Bachelor of BIT</p>
-              <span className="bg-bright-clr -mt-2 rounded-md p-1 text-300 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
                 JKUAT, 2016
               </span>
             </div>
@@ -58,7 +58,7 @@ function About() {
             <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6 mt-6">
               <p>High School Certificate</p>
-              <span className="bg-bright-clr -mt-2 rounded-md p-1 text-300 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
                 Nyamagwa Boys&apos; School, 2009
               </span>
             </div>
@@ -68,7 +68,7 @@ function About() {
             <span className="before:absolute before:top-[10.9rem] before:text-3xl before:text-primary-clr before:content-['•'] dark:before:text-600"></span>
             <div className="ml-6 mt-6">
               <p>Primary School Certificate</p>
-              <span className="bg-bright-clr -mt-2 rounded-md p-1 text-300 dark:bg-800 dark:text-500">
+              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
                 Kosawo Primary School, 1997
               </span>
             </div>
@@ -94,7 +94,7 @@ function About() {
             </Link>
             <button
               onClick={handleDownload}
-              className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-200 ring-700 transition-all hover:ring-800 active:scale-105 dark:ring-2"
+              className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-200 transition-all hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
             >
               <IconFile />
               Download CV
