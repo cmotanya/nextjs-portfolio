@@ -39,7 +39,7 @@ const Carousel = () => {
 
   return (
     <div className="pt-6">
-      <h2 className="pt-4 text-2xl uppercase text-600">Testimonials</h2>
+      <h2 className="pt-4 text-2xl uppercase text-light-clr">Testimonials</h2>
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>
@@ -54,7 +54,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-secondary-clr px-1 pt-4 md:gap-2 dark:bg-800">
+                <div className="relative flex h-full w-full flex-col bg-secondary-clr px-1 pt-4 dark:bg-800 md:gap-2">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}
@@ -63,7 +63,7 @@ const Carousel = () => {
                     width={250}
                     className="mx-auto h-32 w-32 rounded-full object-cover object-center"
                   />
-                  <h3 className="py-2 text-center font-semibold text-secondary-clr">
+                  <h3 className="py-2 text-center font-semibold text-bright-clr dark:text-secondary-clr">
                     {title}
                   </h3>
                   <p className="text-balance text-center">{text}</p>
@@ -74,7 +74,7 @@ const Carousel = () => {
                   {dots.map((dot) => (
                     <button
                       key={dot}
-                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-neutral-950" : "bg-gray-400 hover:bg-gray-500"}`}
+                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-bright-clr dark:bg-neutral-950" : "bg-300 dark:bg-gray-400 dark:hover:bg-gray-500"}`}
                       onClick={() => goToSlide(dot)}
                     ></button>
                   ))}
@@ -87,7 +87,7 @@ const Carousel = () => {
         {/* Left Arrows */}
         <button
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-900 p-2 text-white md:block"
+          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-primary-clr p-2 text-white dark:bg-900 md:block"
         >
           <span aria-hidden="true"></span>
           <svg
@@ -110,7 +110,7 @@ const Carousel = () => {
         {/* Right Arrows */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-900 p-2 text-white md:block"
+          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-primary-clr p-2 text-white dark:bg-900 md:block"
         >
           <span aria-hidden="true"></span>
           <svg

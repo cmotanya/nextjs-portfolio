@@ -75,8 +75,8 @@ function SkillDrawer({
           toggleDrawer(skillName);
         }}
         className={cn(
-          "rounded-full bg-neutral-800/50 px-3 py-1 outline-none outline-offset-2 outline-800 transition-all hover:font-semibold hover:text-500 hover:outline-700",
-          isOpen ? "font-semibold text-500 outline-700" : "",
+          "rounded-full bg-secondary-clr px-3 py-1 outline-none outline-offset-2 outline-secondary-clr transition-all hover:bg-accent-clr hover:outline-accent-clr dark:bg-neutral-800/50 dark:outline-800 dark:hover:font-semibold dark:hover:text-500 dark:hover:outline-700",
+          isOpen ? "font-semibold dark:text-500 dark:outline-700" : "",
         )}
       >
         {isOpen ? "Hide Details" : "Show Details"}
@@ -89,7 +89,7 @@ function SkillDrawer({
             animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="flex flex-wrap gap-3 pt-2 text-400 group-hover:text-neutral-600"
+            className="flex flex-wrap gap-3 pt-2 group-hover:text-600 dark:text-400 dark:group-hover:text-neutral-600"
           >
             {children}
           </motion.div>
@@ -101,8 +101,10 @@ function SkillDrawer({
 
 function SkillItem({ text }: { text: string }) {
   return (
-    <div className="flex hover:text-neutral-400">
-      <span className="rounded-full px-2 py-1 ring-2 ring-700">{text}</span>
+    <div className="flex hover:text-900 dark:hover:text-neutral-400">
+      <span className="rounded-full bg-400 px-2 py-1 ring-700 dark:ring-2">
+        {text}
+      </span>
     </div>
   );
 }
