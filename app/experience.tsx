@@ -61,13 +61,13 @@ function Experience() {
             </p>
           </div>
 
-          <div className="grid justify-between rounded-md bg-400 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+          <div className="grid justify-between rounded-md bg-neutral-400/50 p-2 dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
             <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
               <p className="flex items-center gap-2">
                 <IconBriefcase />{" "}
                 <span className="text-bright-clr">Freelancing Gig</span>
               </p>
-              <span className="ml-8 inline-block rounded-md bg-secondary-clr px-2 dark:bg-neutral-900/50">
+              <span className="ml-8 inline-block rounded-md bg-primary-clr px-2 text-200 dark:bg-neutral-900/50">
                 2020
               </span>
             </div>
