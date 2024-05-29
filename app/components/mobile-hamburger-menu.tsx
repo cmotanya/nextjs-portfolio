@@ -13,7 +13,7 @@ const MobileMenu = ({
       onClick={onclick}
       className={cn(
         "ml-auto rounded-md p-2 md:hidden",
-        isMenuOpen ? "bg-bright-clr" : "bg-primary-clr",
+        isMenuOpen ? "bg-red-500" : "bg-primary-clr",
       )}
     >
       {isMenuOpen ? (
