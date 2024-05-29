@@ -65,12 +65,12 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               placeholder="enter name..."
               name="name"
               autoComplete="name"
-              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
+              className={`rounded-full bg-secondary-clr py-[0.65rem] ps-5 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-2 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.name && (
               <span
                 role="alert"
-                className="-mt-2 text-sm font-semibold text-red-500"
+                className="-mt-2 text-sm font-semibold text-red-600 dark:text-red-500"
               >{`${errors.name.message}`}</span>
             )}
 
@@ -80,12 +80,12 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="email"
               placeholder="enter email..."
               autoComplete="email"
-              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
+              className={`rounded-full bg-secondary-clr py-[0.65rem] ps-5 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-2 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.email && (
               <span
                 role="alert"
-                className="-mt-2 text-sm font-semibold text-red-500"
+                className="-mt-2 text-sm font-semibold text-red-600 dark:text-red-500"
               >{`${errors.email.message}`}</span>
             )}
 
@@ -95,12 +95,12 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="mobile"
               placeholder="enter telephone..."
               autoComplete="tel"
-              className={`rounded-md bg-transparent py-2 ps-4 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
+              className={`rounded-full bg-secondary-clr py-[0.65rem] ps-5 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-2 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.mobile && (
               <span
                 role="alert"
-                className="-mt-2 text-sm font-semibold text-red-500"
+                className="-mt-2 text-sm font-semibold text-red-600 dark:text-red-500"
               >{`${errors.mobile.message}`}</span>
             )}
 
@@ -110,12 +110,12 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               rows={4}
               name="textarea"
               placeholder="enter message..."
-              className={`resize-none rounded-md bg-transparent px-4 py-1 text-neutral-400 ring-2 ring-neutral-700 transition-all placeholder:text-neutral-600 focus-within:outline-none focus-within:ring-neutral-500`}
+              className={`resize-none rounded-md bg-secondary-clr px-5 py-1 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-2 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.textarea && (
               <span
                 role="alert"
-                className="-mt-2 text-sm font-semibold text-red-500"
+                className="-mt-2 text-sm font-semibold text-red-600 dark:text-red-500"
               >{`${errors.textarea.message}`}</span>
             )}
 
