@@ -91,7 +91,7 @@ const MobileNav = ({
       </ul>
 
       {/* --- Mobile button link for contact. --- */}
-      <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-secondary-clr px-4 py-3 text-2xl font-semibold uppercase text-900 dark:xs:bg-transparent dark:md:bg-neutral-800/50 dark:font-normal dark:text-400 md:hidden">
+      <button className="absolute bottom-[5.5rem] left-1/2 right-0 w-max -translate-x-1/2 rounded-md bg-secondary-clr px-4 py-3 text-2xl font-semibold uppercase text-900 dark:bg-neutral-800/50 dark:font-normal dark:text-400 md:hidden">
         <Link
           href="./assets/Resume.pdf"
           target="_blank"
