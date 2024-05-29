@@ -14,7 +14,7 @@ function ContactComponent({
   link?: string;
 }) {
   return (
-    <div className="relative flex h-12 w-[25ch] items-center gap-4 rounded-md bg-400 ps-3 font-semibold before:absolute before:-left-8 before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-700 after:absolute after:-left-8 after:top-1/2 after:size-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-800 xs:mb-0 xs:ml-0 xs:ring-2 xs:ring-700 xs:before:hidden xs:after:hidden sm:mb-2 sm:ml-10 sm:ring-0 sm:before:block md:mb-0 dark:bg-800 dark:text-400">
+    <div className="relative flex h-12 w-[25ch] items-center gap-4 rounded-md bg-accent-clr ps-3 font-semibold before:absolute before:-left-8 before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-700 after:absolute after:-left-8 after:top-1/2 after:size-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-800 dark:bg-800 dark:text-400 xs:mb-0 xs:ml-0 xs:ring-2 xs:ring-700 xs:before:hidden xs:after:hidden sm:mb-2 sm:ml-10 sm:ring-0 sm:before:block md:mb-0">
       <a
         href={link}
         target="_blank"
@@ -67,7 +67,7 @@ function Contact() {
 
   return (
     <section id="contact" className=" mt-6 pb-24 font-semibold md:mt-10">
-      <h1 className="py-3 text-4xl font-extrabold uppercase text-600 md:pt-0">
+      <h1 className="py-3 text-4xl font-extrabold uppercase text-bright-clr dark:text-600 md:pt-0">
         Contact{" "}
       </h1>
       <div>
@@ -76,7 +76,7 @@ function Contact() {
         </h2>
 
         <div className="mb-10 grid grid-flow-row grid-cols-1 md:mt-5 md:grid-flow-col md:grid-cols-[50%_50%]">
-          <div className="mx-auto mb-6 space-y-4 md:mb-0 md:ml-0 dark:text-800">
+          <div className="mx-auto mb-6 space-y-4 dark:text-800 md:mb-0 md:ml-0">
             <ContactComponent icon={<IconMap />} text="Mombasa, Kenya" />
             <ContactComponent
               icon={<IconPhoneCall />}
