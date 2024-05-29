@@ -76,7 +76,7 @@ const MobileNav = ({
             >
               <div
                 className={cn(
-                  "transform-transition flex items-center gap-x-3 font-semibold text-800 duration-300 active:translate-x-2 dark:text-400",
+                  "transform-transition flex items-center gap-x-3 font-semibold text-800 duration-300 active:translate-x-2 dark:font-normal dark:text-400",
                   isMenuOpen && `delay-${index * 100}`,
                 )}
               >
