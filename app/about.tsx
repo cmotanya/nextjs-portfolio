@@ -84,7 +84,7 @@ function About() {
           </p>
           <div className="flex flex-col justify-center gap-4 pt-3 md:flex-row md:gap-12">
             <Link
-              href=""
+              href="./broken_link"
               target="_blank"
               rel="noopener noreferrer"
               className="relative flex flex-1 transform items-center justify-center gap-2 rounded-full bg-secondary-clr px-4 py-3 transition-all active:scale-105 dark:bg-800 dark:text-400"

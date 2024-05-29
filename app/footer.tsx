@@ -16,7 +16,7 @@ function FooterIcon({
 }) {
   return (
     <Link
-      href={"#"}
+      href={"./broken_link"}
       target="_blank"
       className="group relative transform p-3 text-slate-400 before:absolute before:inset-0 before:left-1/2 before:top-1/2 before:-z-30 before:size-9 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-12 before:rounded-md  before:transition-all before:hover:rotate-0 before:hover:scale-105"
     >
