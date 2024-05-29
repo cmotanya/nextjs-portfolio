@@ -65,7 +65,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               placeholder="enter name..."
               name="name"
               autoComplete="name"
-              className={`rounded-full bg-secondary-clr py-[0.65rem] ps-5 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-2 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
+              className={`rounded-full bg-transparent py-[0.65rem] ps-5 ring-2 placeholder:text-600 focus-within:outline-none dark:bg-transparent dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.name && (
               <span
