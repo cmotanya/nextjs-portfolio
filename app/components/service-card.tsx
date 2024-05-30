@@ -44,6 +44,9 @@ const ServiceCard = () => {
             <p>Brochure websites, e-commerce platforms, and more.</p>
             <p>Website maintenance, updates, and optimization.</p>
           </div>
+          <button className="mt-3 w-full transform rounded-full bg-primary-clr py-2 text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600">
+            Reach me
+          </button>
         </div>
 
         <div
@@ -58,6 +61,9 @@ const ServiceCard = () => {
             <p>Network design, installation, and maintenance solutions.</p>
             <p>Cutting-edge technology and experienced technicians.</p>
           </div>
+          <button className="mt-3 w-full transform rounded-full bg-primary-clr py-2 text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600">
+            Reach me
+          </button>
         </div>
       </div>
     </div>
