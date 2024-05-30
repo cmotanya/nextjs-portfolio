@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import Tabs from "./components/image-tab";
 import { tabImg } from "./lib/global_links";
+import ServiceCard from "./components/service-card";
 
 function Experience() {
   const img = tabImg.map((img) => img.images);
@@ -149,11 +150,13 @@ function Experience() {
 
       {/* Skill set array. */}
       <div className="pt-10">
-        <h2 className="text-xl font-bold uppercase text-light-clr dark:text-600">
+        <h2 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
           Skill-set proficiency:
         </h2>
         <SkillsProficiency />
       </div>
+
+      <ServiceCard />
     </section>
   );
 }

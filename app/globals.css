@@ -105,7 +105,7 @@
   }
 
   p {
-    @apply leading-[2.2rem];
+    @apply leading-[2rem];
   }
   h1 {
     @apply text-4xl font-extrabold;
