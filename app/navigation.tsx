@@ -23,7 +23,7 @@ export default function Navigation() {
   return (
     <header
       ref={headerRef}
-      className="absolute top-0 z-30 flex w-full flex-row items-center justify-between bg-transparent p-3 text-200 md:bg-accent-clr dark:md:bg-800"
+      className="absolute top-0 z-30 flex w-full flex-row items-center justify-between bg-transparent p-4 text-200 md:bg-accent-clr dark:md:bg-800"
     >
       {/* --- Theme toggle. --- */}
       <div>
@@ -47,12 +47,12 @@ export default function Navigation() {
       <DesktopNav isActive={isActive} handleClick={handleClick} />
 
       {/* --- Button link for contact me --- */}
-      <button className="rounded-m hidden items-center justify-center  rounded-sm px-4 py-2 text-300 md:flex">
+      <button className="rounded-m hidden items-center justify-center  rounded-md bg-primary-clr px-4 py-2 font-semibold uppercase text-300 dark:bg-900 dark:hover:text-400 md:flex">
         <Link
           href="./assets/Resume.pdf"
           target="_blank"
           passHref={true}
-          className="flex items-center gap-1 rounded-md bg-neutral-700/50 px-4 py-2 text-400 hover:text-300"
+          className="flex items-center gap-1"
         >
           contact me
         </Link>

@@ -37,7 +37,7 @@ const DesktopNav = ({
   handleClick: (name: string) => void;
 }) => {
   return (
-    <nav className="relative py-1 md:py-0">
+    <nav className="relative md:py-0">
       <ul className="hidden gap-5 md:flex">
         {nav_items.map((item) => (
           <li

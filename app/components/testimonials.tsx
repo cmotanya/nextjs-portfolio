@@ -1,8 +1,10 @@
-import { Suspense, useCallback, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { images } from "../lib/global_links";
 
 const Carousel = () => {
+  const testimonialRef = useRef(null);
+
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const interval = 3000;
 
@@ -37,6 +39,24 @@ const Carousel = () => {
     return () => clearInterval(timer);
   }, [currentIndex, goToNext, interval]);
 
+  useEffect(() => {
+    const testimonialRefCurrent = testimonialRef.current;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "scale-0", "invisible");
+          entry.target.classList.add("scale-100");
+        }
+      });
+    });
+
+    if (testimonialRefCurrent) observer.observe(testimonialRefCurrent);
+
+    return () => {
+      if (testimonialRefCurrent) observer.unobserve(testimonialRefCurrent);
+    };
+  }, []);
+
   return (
     <div className="pt-6">
       <h2 className="pt-4 text-2xl uppercase text-light-clr dark:text-600">
@@ -45,7 +65,11 @@ const Carousel = () => {
       <p className="pb-3 font-semibold">
         Some of my latest recommendations from clients I have worked with:
       </p>
-      <div className="relative mx-auto h-[23rem] w-full overflow-hidden rounded-md md:h-[20rem] md:w-[90%]">
+
+      <div
+        ref={testimonialRef}
+        className="invisible relative mx-auto h-[23rem] w-full scale-0 transform overflow-hidden rounded-md opacity-0 transition duration-300 md:h-[20rem] md:w-[90%]"
+      >
         <Suspense>
           <div className="relative size-full">
             {images.map(({ src, title, text }, index) => (

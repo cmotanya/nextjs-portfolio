@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
 import { IconBrandLinkedin, IconFile, IconSchool } from "@tabler/icons-react";
 
