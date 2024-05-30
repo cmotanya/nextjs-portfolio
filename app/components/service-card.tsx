@@ -34,36 +34,30 @@ const ServiceCard = () => {
       <div className="mt-2 flex flex-col gap-4 md:flex-row">
         <div
           ref={webCardRef}
-          className="invisible scale-0 transform space-y-3 rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out"
+          className="invisible scale-0 transform rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
-          <p className="text-center text-xl uppercase text-bright-clr">web</p>
-          <p className="leading-normal">
-            Custom website design and development for all business needs.
+          <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
+            web
           </p>
-          <p className="leading-normal">
-            Brochure websites, e-commerce platforms, and more.
-          </p>
-          <p className="leading-normal">
-            Website maintenance, updates, and optimization.
-          </p>
+          <div className="space-y-2 leading-normal dark:text-400">
+            <p>Custom website design and development for all business needs.</p>
+            <p>Brochure websites, e-commerce platforms, and more.</p>
+            <p>Website maintenance, updates, and optimization.</p>
+          </div>
         </div>
 
         <div
           ref={netCardRef}
-          className="space-y-3 rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out"
+          className="invisible scale-0 transform rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
-          <p className="text-center text-xl uppercase text-bright-clr">
+          <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
             cctv and networking
           </p>
-          <p className="leading-normal">
-            Professional CCTV installation for security and surveillance.
-          </p>
-          <p className="leading-normal">
-            Network design, installation, and maintenance solutions.
-          </p>
-          <p className="leading-normal">
-            Cutting-edge technology and experienced technicians.
-          </p>
+          <div className="space-y-2 leading-normal dark:text-400">
+            <p>Professional CCTV installation for security and surveillance.</p>
+            <p>Network design, installation, and maintenance solutions.</p>
+            <p>Cutting-edge technology and experienced technicians.</p>
+          </div>
         </div>
       </div>
     </div>
