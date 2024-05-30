@@ -5,7 +5,6 @@ function NotFound() {
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center overflow-hidden bg-gray-900 text-center text-gray-300">
       <div className="pb-10">
-        {/* <h1 className="text-9xl font-bold">404</h1> */}
         <NotFoundIcon />
       </div>
       <div className="pb-10">
