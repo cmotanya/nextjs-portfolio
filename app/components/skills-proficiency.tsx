@@ -14,44 +14,49 @@ function ProfessionalSkills() {
   }
 
   return (
-    <div className="space-y-4">
-      <SkillDrawer
-        isOpen={isDrawerOpen === "Programming:"}
-        toggleDrawer={toggleDrawer}
-        skillName="Programming:"
-      >
-        <SkillItem text="HTML5" />
-        <SkillItem text="CSS3" />
-        <SkillItem text="JavaScript" />
-        <SkillItem text="AstroJS" />
-        <SkillItem text="ReactJS" />
-        <SkillItem text="NextJS" />
-        <SkillItem text="Python" />
-        <SkillItem text="Pandas" />
-      </SkillDrawer>
+    <div className="pt-10">
+      <h2 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
+        Skill-set proficiency:
+      </h2>
+      <div className="space-y-4">
+        <SkillDrawer
+          isOpen={isDrawerOpen === "Programming:"}
+          toggleDrawer={toggleDrawer}
+          skillName="Programming:"
+        >
+          <SkillItem text="HTML5" />
+          <SkillItem text="CSS3" />
+          <SkillItem text="JavaScript" />
+          <SkillItem text="AstroJS" />
+          <SkillItem text="ReactJS" />
+          <SkillItem text="NextJS" />
+          <SkillItem text="Python" />
+          <SkillItem text="Pandas" />
+        </SkillDrawer>
 
-      <SkillDrawer
-        skillName="CCTV, Biometric and Access Controls:"
-        isOpen={isDrawerOpen === "CCTV, Biometric and Access Controls:"}
-        toggleDrawer={toggleDrawer}
-      >
-        <SkillItem text="Site Survey" />
-        <SkillItem text="Installation" />
-        <SkillItem text="Maintenance" />
-        <SkillItem text="Remote View" />
-      </SkillDrawer>
+        <SkillDrawer
+          skillName="CCTV, Biometric and Access Controls:"
+          isOpen={isDrawerOpen === "CCTV, Biometric and Access Controls:"}
+          toggleDrawer={toggleDrawer}
+        >
+          <SkillItem text="Site Survey" />
+          <SkillItem text="Installation" />
+          <SkillItem text="Maintenance" />
+          <SkillItem text="Remote View" />
+        </SkillDrawer>
 
-      <SkillDrawer
-        skillName="Networking:"
-        isOpen={isDrawerOpen === "Networking:"}
-        toggleDrawer={toggleDrawer}
-      >
-        <SkillItem text="Basic Set-up" />
-        <SkillItem text="Troubleshooting" />
-        <SkillItem text="IP Addressing" />
-        <SkillItem text="Wireless Config" />
-        <SkillItem text="Cabling" />
-      </SkillDrawer>
+        <SkillDrawer
+          skillName="Networking:"
+          isOpen={isDrawerOpen === "Networking:"}
+          toggleDrawer={toggleDrawer}
+        >
+          <SkillItem text="Basic Set-up" />
+          <SkillItem text="Troubleshooting" />
+          <SkillItem text="IP Addressing" />
+          <SkillItem text="Wireless Config" />
+          <SkillItem text="Cabling" />
+        </SkillDrawer>
+      </div>
     </div>
   );
 }
@@ -102,9 +107,7 @@ function SkillDrawer({
 function SkillItem({ text }: { text: string }) {
   return (
     <div className="flex hover:text-900 dark:hover:text-neutral-400">
-      <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">
-        {text}
-      </span>
+      <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">{text}</span>
     </div>
   );
 }

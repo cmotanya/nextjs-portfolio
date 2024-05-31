@@ -4,8 +4,6 @@ import React from "react";
 import { IconDeviceMobile, IconMail, IconMap } from "@tabler/icons-react";
 import ContactForm from "./components/contact-form";
 import ContactComponent from "./components/contact-cards";
-import PhoneIcon from "../public/svg/phone-icon.svg";
-import MailIcon from "../public/svg/mail-icon.svg";
 
 function Contact() {
   const accessKey = "2e3adbbc-1bf9-439a-b88a-d85e13ac63fe";

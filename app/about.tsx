@@ -1,48 +1,8 @@
-"use client";
-
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { IconBrandLinkedin, IconFile } from "@tabler/icons-react";
-import { motion } from "framer-motion";
+import React from "react";
+import Education from "./components/education";
+import AboutButtons from "./components/aboutButtons";
 
 function About() {
-  const [isDownloading, setIsDownloading] = useState(false);
-  const buttonRef = useRef(null);
-
-  const handleDownload = useCallback(() => {
-    setIsDownloading(true);
-
-    setTimeout(() => {
-      setIsDownloading(false);
-
-      const link = document.createElement("a");
-      const fileID = "18r8SaE40PmARQSv5kV42NAQaLsg-3R8B";
-      link.href = `https://drive.google.com/uc?export=download&id=${fileID}`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }, 3000);
-  }, []);
-
-  useEffect(() => {
-    const buttonRefElem = buttonRef.current;
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("opacity-0", "translate-y-8");
-          entry.target.classList.add("translate-y-0");
-        }
-      });
-    });
-
-    if (buttonRefElem) observer.observe(buttonRefElem);
-
-    return () => {
-      if (buttonRefElem) observer.unobserve(buttonRefElem);
-    };
-  }, []);
-
   return (
     <section id="about" className="mt-6 font-semibold md:mt-10">
       <h1 className="py-1 font-extrabold uppercase text-bright-clr dark:text-600">
@@ -67,72 +27,10 @@ function About() {
             configuration complements besides wed development.
           </p>
         </div>
-        <div>
-          <h3 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
-            Education
-          </h3>
 
-          {/* University college */}
-          <div className="relative">
-            <span className="before:absolute before:text-3xl before:text-accent-clr before:content-['•'] dark:before:text-600"></span>
-            <div className="ml-6">
-              <p>Bachelor of BIT</p>
-              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
-                JKUAT, 2016
-              </span>
-            </div>
+        <Education />
 
-            {/* Secondary school */}
-            <span className="before:absolute before:left-[0.26rem] before:top-[1.6rem] before:h-[4.5rem] before:w-[0.12rem] before:bg-700 dark:before:bg-700"></span>
-            <span className="before:absolute before:top-[5.4rem] before:text-3xl before:text-accent-clr before:content-['•'] dark:before:text-700"></span>
-            <div className="ml-6 mt-6">
-              <p>High School Certificate</p>
-              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
-                Nyamagwa Boys&apos; School, 2009
-              </span>
-            </div>
-
-            {/* Primary school */}
-            <span className="before:absolute before:left-[0.26rem] before:top-[7.0rem] before:h-[4.6rem] before:w-[0.12rem] before:bg-600 dark:before:bg-700"></span>
-            <span className="before:absolute before:top-[10.9rem] before:text-3xl before:text-accent-clr before:content-['•'] dark:before:text-800"></span>
-            <div className="ml-6 mt-6">
-              <p>Primary School Certificate</p>
-              <span className="-mt-2 rounded-md bg-bright-clr p-1 text-300 dark:bg-800 dark:text-500">
-                Kosawo Primary School, 1997
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <p>
-            For more details, you can check out my{" "}
-            <span className="text-light-clr dark:text-600">LinkedIn</span> or{" "}
-            <span className="text-light-clr dark:text-600">download my CV</span>
-            .
-          </p>
-          <div
-            ref={buttonRef}
-            className="flex translate-y-8 transform flex-col justify-center gap-4 pt-3 opacity-0 transition duration-700 ease-in-out md:flex-row md:gap-12"
-          >
-            <Link
-              href="./broken_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative flex flex-1 items-center justify-center gap-2 rounded-full bg-secondary-clr px-4 py-3 active:scale-105 dark:bg-800 dark:text-400"
-            >
-              <IconBrandLinkedin className="text-[#0a66c2]" />
-              LinkedIn
-            </Link>
-            <button
-              onClick={handleDownload}
-              className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-200 hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
-            >
-              <IconFile />
-              {isDownloading ? "Downloading..." : "Download CV"}
-            </button>
-          </div>
-        </div>
+        <AboutButtons />
       </div>
     </section>
   );
