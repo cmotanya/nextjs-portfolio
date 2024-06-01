@@ -91,7 +91,7 @@ function SkillDrawer({
         <div className="group">
           <motion.div
             transition={{ duration: 0.4 }}
-            className="pt-2 group-hover:text-600 dark:text-600 dark:group-hover:text-neutral-600"
+            className="pt-2 group-hover:text-600 dark:text-400 dark:group-hover:text-neutral-600"
           >
             <motion.div
               initial="translate-y-4"
