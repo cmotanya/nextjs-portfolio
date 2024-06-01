@@ -21,7 +21,7 @@ const TopArrowButton = () => {
     <button
       onClick={scrollToTop}
       className={cn(
-        "dark:text-100 text-200 fixed bottom-5 right-5 z-40 rounded-full bg-primary-clr p-3 transition-opacity duration-300 dark:bg-700 md:p-2 dark:md:bg-800",
+        "dark:text-100 fixed bottom-5 right-5 z-40 rounded-full bg-secondary-clr p-3 transition-opacity duration-300 dark:bg-700 dark:active:ring-2 dark:focus-within:ring-700 md:p-2 dark:md:bg-800",
         isVisible ? "opacity-100" : "opacity-0",
       )}
     >
