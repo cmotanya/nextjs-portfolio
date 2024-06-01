@@ -97,17 +97,6 @@ function SkillDrawer({
               initial="translate-y-4"
               animate="translate-y-0"
               exit="hidden"
-              variants={{
-                hidden: {
-                  opacity: 0,
-                },
-                visible: {
-                  opacity: 1,
-                  transition: {
-                    staggerChildren: 0.2,
-                  },
-                },
-              }}
               className="flex flex-wrap gap-3"
             >
               {children}
@@ -125,7 +114,7 @@ function SkillItem({ text }: { text: string }) {
       initial={{ opacity: 0, translateY: -24 }}
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: -24 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.4 }}
       className="flex hover:text-900 dark:hover:text-neutral-400"
     >
       <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">{text}</span>
