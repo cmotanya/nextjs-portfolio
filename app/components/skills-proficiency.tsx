@@ -91,7 +91,7 @@ function SkillDrawer({
         <div className="group">
           <motion.div
             transition={{ duration: 0.4 }}
-            className="pt-2 group-hover:text-600 dark:text-400 dark:group-hover:text-neutral-600"
+            className="pt-2 group-hover:text-600 dark:text-600 dark:group-hover:text-neutral-600"
           >
             <motion.div
               initial="translate-y-4"
@@ -125,7 +125,7 @@ function SkillItem({ text }: { text: string }) {
       initial={{ opacity: 0, translateY: -24 }}
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: -24 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.5 }}
       className="flex hover:text-900 dark:hover:text-neutral-400"
     >
       <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">{text}</span>

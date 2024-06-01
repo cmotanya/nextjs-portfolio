@@ -34,36 +34,56 @@ const ServiceCard = () => {
       <div className="mt-2 flex flex-col gap-4 md:flex-row">
         <div
           ref={webCardRef}
-          className="invisible scale-0 transform rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
+          className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
           <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
             web
           </p>
-          <div className="space-y-2 leading-normal dark:text-400">
-            <p>Custom website design and development for all business needs.</p>
-            <p>Brochure websites, e-commerce platforms, and more.</p>
-            <p>Website maintenance, updates, and optimization.</p>
+          <div className="space-y-2 *:leading-tight dark:text-400">
+            <p>
+              <strong>Sing-page website:</strong> Perfect for small businesses
+              or personal projects.
+            </p>
+            <p>
+              <strong>Portfolio website:</strong> Showcase your work in a
+              stunning online portfolio.
+            </p>
+            <p>
+              <strong>Business website:</strong> Comprehensive sites with
+              multiple pages to represent your business.
+            </p>
           </div>
-          <button className="mt-3 w-full transform rounded-full bg-primary-clr py-2 text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600">
-            Reach me
-          </button>
+          <div className="mt-5 flex justify-center">
+            <button className="w-full transform rounded-full bg-primary-clr px-4 py-2 uppercase text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600 md:w-fit">
+              Get Started Today
+            </button>
+          </div>
         </div>
 
         <div
           ref={netCardRef}
-          className="invisible scale-0 transform rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
+          className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
           <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
             cctv and networking
           </p>
-          <div className="space-y-2 leading-normal dark:text-400">
-            <p>Professional CCTV installation for security and surveillance.</p>
-            <p>Network design, installation, and maintenance solutions.</p>
-            <p>Cutting-edge technology and experienced technicians.</p>
+          <div className="space-y-2 *:leading-tight dark:text-400">
+            <p>
+              <strong>
+                Professional CCTV installation for security and surveillance:
+              </strong>{" "}
+              Prices start from KShs.8,000
+            </p>
+            <p>
+              <strong>Custom network design and installation:</strong> Prices
+              may vary based on project scope.
+            </p>
           </div>
-          <button className="mt-3 w-full transform rounded-full bg-primary-clr py-2 text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600">
-            Reach me
-          </button>
+          <div className="mt-5 flex justify-center">
+            <button className="w-full transform rounded-full bg-primary-clr px-4 py-2 uppercase text-200 transition hover:text-300 active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600 md:w-fit">
+              connect now
+            </button>
+          </div>
         </div>
       </div>
     </div>
