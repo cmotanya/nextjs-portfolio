@@ -73,6 +73,7 @@ function SkillDrawer({
   toggleDrawer: (skillName: string) => void;
 }) {
   const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const buttonRef = ref.current;
@@ -81,8 +82,7 @@ function SkillDrawer({
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0", "-translate-x-16");
-            entry.target.classList.add("translate-x-0");
+            setIsVisible(true);
           }
         });
       },
@@ -105,8 +105,9 @@ function SkillDrawer({
           toggleDrawer(skillName);
         }}
         className={cn(
-          "-translate-x-16 transform rounded-full bg-secondary-clr px-3 py-1 opacity-0 outline-none outline-offset-2 outline-secondary-clr transition-all duration-500 ease-in-out hover:bg-accent-clr hover:outline-accent-clr dark:bg-neutral-800/50 dark:outline-800 dark:hover:font-semibold dark:hover:text-500 dark:hover:outline-700",
+          "transform rounded-full bg-secondary-clr px-3 py-1 outline-none outline-offset-2 outline-secondary-clr transition-all duration-500 ease-in-out hover:bg-accent-clr hover:outline-accent-clr dark:bg-neutral-800/50 dark:outline-800 dark:hover:font-semibold dark:hover:text-500 dark:hover:outline-700",
           isOpen ? "font-semibold dark:text-500 dark:outline-700" : "",
+          isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0",
         )}
       >
         {isOpen ? "Hide Details" : "Show Details"}
@@ -116,13 +117,13 @@ function SkillDrawer({
         <div className="group">
           <motion.div
             transition={{ duration: 0.4 }}
-            className="pt-2 group-hover:text-600 dark:text-600 dark:group-hover:text-neutral-600"
+            className="group-hover:text-600 dark:text-600 dark:group-hover:text-neutral-600"
           >
             <motion.div
               initial={{ translateY: 16 }}
               animate="translate-y-0"
               exit="hidden"
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap gap-3 -mt-3 pb-3"
             >
               {children}
             </motion.div>
