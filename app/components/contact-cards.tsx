@@ -30,7 +30,7 @@ const ContactCards = ({ icon, text, link }: ContactCardsProps) => {
   }, []);
 
   return (
-    <div className="relative before:absolute before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-light-clr after:absolute after:top-1/2 after:size-3 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-300 dark:before:bg-700 dark:after:bg-900 xs:before:hidden sm:before:block">
+    <div className="relative before:absolute before:top-1/2 before:size-5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-light-clr after:absolute after:top-1/2 after:size-3 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-300 dark:before:bg-700 dark:after:bg-900 xs:before:hidden xs:after:hidden sm:before:block sm:after:block">
       <Link
         ref={card}
         href={link || "#"}
