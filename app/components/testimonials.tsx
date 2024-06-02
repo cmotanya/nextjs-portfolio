@@ -68,7 +68,7 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[23rem] w-full scale-0 transform overflow-hidden rounded-md opacity-0 transition duration-300 md:h-[20rem] md:w-[90%]"
+        className="invisible relative mx-auto h-[23rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem] md:w-[90%]"
       >
         <Suspense>
           <div className="relative size-full">
@@ -80,7 +80,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col bg-secondary-clr px-1 pt-4 dark:bg-800 md:gap-2">
+                <div className="relative flex h-full w-full flex-col px-1 pt-4 md:gap-2">
                   <Image
                     src={src}
                     alt={`Slide ${src}`}

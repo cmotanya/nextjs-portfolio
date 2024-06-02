@@ -9,20 +9,55 @@ const ServiceCard = () => {
     const webRefCurrent = webCardRef.current;
     const netRefCurrent = netCardRef.current;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("scale-0", "opacity-0", "invisible");
-          entry.target.classList.add("scale-100");
-        }
-      });
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove(
+              "scale-75",
+              "opacity-0",
+              "invisible",
+              "rotate-6",
+            );
+            entry.target.classList.add("scale-100", "rotate-0");
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
 
     if (webRefCurrent) observer.observe(webRefCurrent);
     if (netRefCurrent) observer.observe(netRefCurrent);
 
     return () => {
       if (webRefCurrent) observer.unobserve(webRefCurrent);
+      if (netRefCurrent) observer.unobserve(netRefCurrent);
+    };
+  }, []);
+
+  useEffect(() => {
+    const netRefCurrent = netCardRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove(
+              "scale-75",
+              "opacity-0",
+              "invisible",
+              "-rotate-6",
+            );
+            entry.target.classList.add("scale-100", "rotate-0");
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+
+    if (netRefCurrent) observer.observe(netRefCurrent);
+
+    return () => {
       if (netRefCurrent) observer.unobserve(netRefCurrent);
     };
   }, []);
@@ -35,7 +70,7 @@ const ServiceCard = () => {
       <div className="mt-2 flex flex-col gap-4 md:flex-row">
         <div
           ref={webCardRef}
-          className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
+          className="invisible flex rotate-6 scale-75 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:bg-800"
         >
           <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
             <IconDeviceLaptop /> web
@@ -63,7 +98,7 @@ const ServiceCard = () => {
 
         <div
           ref={netCardRef}
-          className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
+          className="invisible -rotate-6 flex scale-75 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:bg-800"
         >
           <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
             <IconTools /> cctv and networking

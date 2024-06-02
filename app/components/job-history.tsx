@@ -3,11 +3,45 @@ import {
   IconBuildingStore,
   IconBriefcase,
 } from "@tabler/icons-react";
+import { useEffect, useRef } from "react";
 
 const JobHistory = () => {
+  const refs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const cardRefs = refs.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "scale-75");
+            entry.target.classList.add("scale-100");
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+
+    cardRefs.forEach((cardRef) => {
+      if (cardRef) observer.observe(cardRef);
+    });
+
+    return () => {
+      cardRefs.forEach((cardRef) => {
+        if (cardRef) observer.unobserve(cardRef);
+      });
+    };
+  }, []);
+
   return (
     <div className="space-y-3">
-      <div className="grid justify-between rounded-md bg-400 p-2 shadow-xl dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+      <div
+        ref={(el) => {
+          refs.current[0] = el;
+        }}
+        className="grid scale-75 transform justify-between rounded-md bg-400 p-2 opacity-0 shadow-xl transition-all duration-700 ease-in-out dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]"
+      >
         <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
           <p className="flex items-center gap-2">
             <IconBuilding />{" "}
@@ -19,13 +53,18 @@ const JobHistory = () => {
             2017
           </span>
         </div>
-        <p className="dark:text-500">
+        <p className="leading-tight dark:text-500">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
           iusto?
         </p>
       </div>
 
-      <div className="grid justify-between rounded-md bg-400 p-2 shadow-xl dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+      <div
+        ref={(el) => {
+          refs.current[1] = el;
+        }}
+        className="grid scale-75 transform justify-between rounded-md bg-400 p-2 opacity-0 shadow-xl transition-all duration-700 ease-in-out dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]"
+      >
         <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
           <p className="flex items-center gap-2">
             <IconBuildingStore />{" "}
@@ -35,13 +74,18 @@ const JobHistory = () => {
             2019
           </span>
         </div>
-        <p className="dark:text-500">
+        <p className="leading-tight dark:text-500">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
           amet?
         </p>
       </div>
 
-      <div className="grid justify-between rounded-md bg-400 p-2 shadow-xl dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]">
+      <div
+        ref={(el) => {
+          refs.current[2] = el;
+        }}
+        className="grid scale-75 transform justify-between rounded-md bg-400 p-2 opacity-0 shadow-xl transition-all duration-700 ease-in-out dark:bg-800 md:w-[80%] md:grid-flow-col md:grid-cols-[50%_50%]"
+      >
         <div className="mb-2 flex items-center justify-between md:mb-0 md:block">
           <p className="flex items-center gap-2">
             <IconBriefcase />{" "}
@@ -53,7 +97,7 @@ const JobHistory = () => {
             2020
           </span>
         </div>
-        <p className="dark:text-500">
+        <p className="leading-tight dark:text-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
           perferendis.
         </p>

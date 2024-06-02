@@ -13,14 +13,17 @@ const ContactCards = ({ icon, text, link }: ContactCardsProps) => {
   useEffect(() => {
     const cardRef = card.current;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("translate-y-4", "opacity-0");
-          entry.target.classList.add("translate-y-0");
-        }
-      });
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("translate-y-4", "opacity-0");
+            entry.target.classList.add("translate-y-0");
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
 
     if (cardRef) observer.observe(cardRef);
 
