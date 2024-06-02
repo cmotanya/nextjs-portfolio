@@ -62,7 +62,7 @@ const AboutButtons = () => {
         </Link>
         <button
           onClick={handleDownload}
-          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-400 hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
+          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-300 shadow hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
         >
           <IconFile />
           {isDownloading ? "Downloading..." : "Download CV"}

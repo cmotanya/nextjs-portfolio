@@ -1,3 +1,4 @@
+import { IconDeviceLaptop, IconTools } from "@tabler/icons-react";
 import { RefObject, useEffect, useRef } from "react";
 
 const ServiceCard = () => {
@@ -36,8 +37,8 @@ const ServiceCard = () => {
           ref={webCardRef}
           className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
-          <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
-            web
+          <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
+            <IconDeviceLaptop /> web
           </p>
           <div className="space-y-2 *:leading-tight dark:text-400">
             <p>
@@ -64,8 +65,8 @@ const ServiceCard = () => {
           ref={netCardRef}
           className="invisible flex scale-0 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 transition duration-300 ease-in-out dark:bg-800"
         >
-          <p className="pb-3 text-center text-xl uppercase text-bright-clr dark:text-600">
-            cctv and networking
+          <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
+            <IconTools /> cctv and networking
           </p>
           <div className="space-y-2 *:leading-tight dark:text-400">
             <p>

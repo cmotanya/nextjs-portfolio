@@ -65,7 +65,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               placeholder="enter name..."
               name="name"
               autoComplete="name"
-              className={`rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
+              className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 autofill:bg-yellow-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.name && (
               <span
@@ -80,7 +80,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="email"
               placeholder="enter email..."
               autoComplete="email"
-              className={`rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
+              className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.email && (
               <span
@@ -95,7 +95,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               name="mobile"
               placeholder="enter telephone..."
               autoComplete="tel"
-              className={`rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
+              className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.mobile && (
               <span
