@@ -123,7 +123,7 @@ function SkillDrawer({
               initial={{ translateY: 16 }}
               animate="translate-y-0"
               exit="hidden"
-              className="flex flex-wrap gap-3 -mt-3 pb-3"
+              className="flex flex-wrap gap-3 -mt-2 pb-3"
             >
               {children}
             </motion.div>
@@ -140,7 +140,7 @@ function SkillItem({ text }: { text: string }) {
       initial={{ opacity: 0, translateY: -24 }}
       animate={{ opacity: 1, translateY: 0 }}
       exit={{ opacity: 0, translateY: -24 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.2 }}
       className="flex hover:text-900 dark:hover:text-neutral-400"
     >
       <span className="rounded-full bg-400 px-2 py-1 dark:bg-800">{text}</span>
