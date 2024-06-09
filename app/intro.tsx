@@ -36,13 +36,13 @@ const Intro = () => {
       <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-5 md:flex-row">
         <a
           href="#contact"
-          className="flex-1 rounded-full bg-primary-clr px-6 py-3 text-center text-200 transition active:scale-105 dark:bg-800 dark:hover:bg-neutral-700/50"
+          className="flex-1 rounded-full bg-primary-clr px-6 py-3 text-center text-200 shadow-lg transition active:scale-105 dark:bg-800 dark:hover:bg-neutral-700/50"
         >
           Get in Touch
         </a>
         <a
           href="#projects"
-          className="flex-1 rounded-full bg-secondary-clr px-6 py-3 text-center ring-600 transition hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2"
+          className="flex-1 rounded-full bg-secondary-clr px-6 py-3 text-center shadow-lg ring-600 transition hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2"
         >
           View Projects
         </a>

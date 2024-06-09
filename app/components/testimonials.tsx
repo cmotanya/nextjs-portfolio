@@ -68,11 +68,11 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[23rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem] md:w-[90%]"
+        className="invisible relative mx-auto h-[18rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
       >
         <Suspense>
           <div className="relative size-full">
-            {images.map(({ src, title, text }, index) => (
+            {images.map(({ src, title, text, name }, index) => (
               /* Slides */
               <div
                 key={src}
@@ -80,19 +80,25 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative flex h-full w-full flex-col px-1 pt-4 md:gap-2">
-                  <Image
-                    src={src}
-                    alt={`Slide ${src}`}
-                    priority
-                    height={300}
-                    width={250}
-                    className="mx-auto h-32 w-32 rounded-full object-cover object-center"
-                  />
-                  <h3 className="py-2 text-center font-semibold text-bright-clr dark:text-secondary-clr">
-                    {title}
-                  </h3>
-                  <p className="text-balance text-center">{text}</p>
+                <div className="relative mx-auto flex h-full w-full flex-col space-y-4 px-3 pt-6 md:w-[60%] md:gap-2 md:px-1">
+                  <h2 className="text-3xl uppercase text-600">{title}</h2>
+                  <p className="text-balance">{text}</p>
+                  <div className="flex w-fit gap-4">
+                    <Image
+                      src={src}
+                      alt={`Slide ${src}`}
+                      priority
+                      height={100}
+                      width={100}
+                      className="mx-auto h-16 w-16 rounded-lg object-cover object-center"
+                    />
+                    <div className="-space-y-2 my-auto">
+                      <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
+                        {name}
+                      </h3>
+                      <p>{title}</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Dots */}

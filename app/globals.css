@@ -66,7 +66,7 @@
   }
 
   * {
-    @apply m-0 select-none scroll-smooth p-0;
+    @apply m-0 select-none scroll-smooth p-0 focus-visible:outline-none;
   }
 
   body {
@@ -136,5 +136,11 @@
   }
   h1 {
     @apply text-4xl font-extrabold;
+  }
+  button,
+  a,
+  input,
+  textarea {
+    @apply focus-visible:scale-105 focus-visible:transform focus-visible:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:transition-all focus-visible:duration-500;
   }
 }
