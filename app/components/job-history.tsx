@@ -53,10 +53,16 @@ const JobHistory = () => {
             2017
           </span>
         </div>
-        <p className="leading-tight dark:text-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
-          iusto?
-        </p>
+        <div className="space-y-2 text-base dark:text-400">
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            perferendis.
+          </p>
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            nisi quo facere dolore ipsa perferendis.
+          </p>
+        </div>
       </div>
 
       <div
@@ -74,10 +80,16 @@ const JobHistory = () => {
             2019
           </span>
         </div>
-        <p className="leading-tight dark:text-500">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
-          amet?
-        </p>
+        <div className="space-y-2 text-base dark:text-400">
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            perferendis.
+          </p>
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            nisi quo facere dolore ipsa perferendis.
+          </p>
+        </div>
       </div>
 
       <div
@@ -97,10 +109,16 @@ const JobHistory = () => {
             2020
           </span>
         </div>
-        <p className="leading-tight dark:text-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-          perferendis.
-        </p>
+        <div className="space-y-2 text-base dark:text-400">
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            perferendis.
+          </p>
+          <p className="leading-tight">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            nisi quo facere dolore ipsa perferendis.
+          </p>
+        </div>
       </div>
     </div>
   );

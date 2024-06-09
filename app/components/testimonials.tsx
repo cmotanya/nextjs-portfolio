@@ -80,9 +80,9 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative mx-auto flex h-full w-full flex-col justify-around pb-8 px-3 md:w-[60%] md:gap-2 md:px-1">
+                <div className="relative mx-auto flex h-full w-full flex-col justify-around px-3 pb-8 md:w-[60%] md:gap-2 md:px-1">
                   <h2 className="text-3xl uppercase text-600">{title}</h2>
-                  <p className="text-balance leading-tight text-base">{text}</p>
+                  <p className="text-balance text-base leading-tight">{text}</p>
                   <div className="flex w-fit gap-4 pt-6">
                     <Image
                       src={src}
@@ -96,7 +96,7 @@ const Carousel = () => {
                       <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
                         {name}
                       </h3>
-                      <p className="text-600 md:text-900">{title}</p>
+                      <p className="text-600 dark:text-500">{title}</p>
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const Carousel = () => {
                   {dots.map((dot) => (
                     <button
                       key={dot}
-                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-bright-clr dark:bg-neutral-950" : "bg-300 dark:bg-gray-400 dark:hover:bg-gray-500"}`}
+                      className={`mx-1 size-3 rounded-full transition-colors duration-300 ${currentIndex === dot ? "bg-bright-clr dark:bg-900" : "bg-300 dark:bg-400 dark:hover:bg-500"}`}
                       onClick={() => goToSlide(dot)}
                     ></button>
                   ))}
