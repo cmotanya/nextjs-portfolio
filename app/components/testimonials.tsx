@@ -80,7 +80,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative mx-auto flex h-full w-full flex-col space-y-4 px-3 pt-6 md:w-[60%] md:gap-2 md:px-1">
+                <div className="relative mx-auto flex h-full w-full flex-col justify-around py-8 px-3 md:w-[60%] md:gap-2 md:px-1">
                   <h2 className="text-3xl uppercase text-600">{title}</h2>
                   <p className="text-balance leading-tight text-base">{text}</p>
                   <div className="flex w-fit gap-4 pt-6">
