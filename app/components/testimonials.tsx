@@ -92,11 +92,11 @@ const Carousel = () => {
                       width={100}
                       className="mx-auto h-16 w-16 rounded-lg object-cover object-center"
                     />
-                    <div className="-space-y-2 my-auto">
+                    <div className="my-auto -space-y-2">
                       <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
                         {name}
                       </h3>
-                      <p>{title}</p>
+                      <p className="text-500 md:text-900">{title}</p>
                     </div>
                   </div>
                 </div>
