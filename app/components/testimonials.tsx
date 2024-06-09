@@ -68,7 +68,7 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[20rem] w-full scale-0 transform overflow-hidden rounded-md bg-400 opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
+        className="invisible relative mx-auto h-[18rem] w-full scale-0 transform overflow-hidden rounded-md bg-400 opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
       >
         <Suspense>
           <div className="relative size-full">
@@ -81,9 +81,8 @@ const Carousel = () => {
                 }`}
               >
                 <div className="relative mx-auto flex h-full w-full flex-col justify-around px-3 pb-8 md:w-[60%] md:gap-2 md:px-1">
-                  <h2 className="text-3xl uppercase text-600">{title}</h2>
                   <p className="text-balance text-base leading-tight">{text}</p>
-                  <div className="flex w-fit gap-4 pt-6">
+                  <div className="flex w-fit gap-4">
                     <Image
                       src={src}
                       alt={`Slide ${src}`}
