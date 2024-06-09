@@ -80,22 +80,50 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative mx-auto flex h-full w-full flex-col justify-around px-3 pb-8 md:w-[60%] md:gap-2 md:px-1">
-                  <p className="text-balance text-base leading-tight">{text}</p>
-                  <div className="flex w-fit gap-4">
+                <div className="relative mx-auto flex h-full w-full px-3 pb-8 md:w-[80%] md:gap-2 md:px-1 md:pb-0">
+                  {/* For mobile */}
+                  <div className="flex h-full w-full flex-col justify-around md:hidden">
+                    <p className="text-balance text-base leading-tight">
+                      {text}
+                    </p>
+                    <div className="flex w-fit gap-4">
+                      <Image
+                        src={src}
+                        alt={`Slide ${src}`}
+                        priority
+                        height={100}
+                        width={100}
+                        className="mx-auto h-16 w-16 rounded-full object-cover object-center"
+                      />
+                      <div className="my-auto -space-y-2">
+                        <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
+                          {name}
+                        </h3>
+                        <p className="text-600 dark:text-500">{title}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* For Desktop */}
+                  <div className="hidden h-full w-full grid-flow-col grid-cols-[35%_65%] items-center gap-4 md:grid">
                     <Image
                       src={src}
                       alt={`Slide ${src}`}
                       priority
-                      height={100}
-                      width={100}
-                      className="mx-auto h-16 w-16 rounded-full object-cover object-center"
+                      height={400}
+                      width={200}
+                      className="h-[14rem] w-full rounded-lg object-cover object-center"
                     />
-                    <div className="my-auto -space-y-2">
-                      <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
-                        {name}
-                      </h3>
-                      <p className="text-600 dark:text-500">{title}</p>
+                    <div className="flex w-fit flex-col gap-4">
+                      <p className="text-balance text-base leading-tight">
+                        {text}
+                      </p>
+                      <div className="my-auto -space-y-2">
+                        <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
+                          {name}
+                        </h3>
+                        <p className="text-600 dark:text-500">{title}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
