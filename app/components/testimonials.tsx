@@ -68,7 +68,7 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[20rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
+        className="invisible relative mx-auto h-[20rem] w-full scale-0 transform overflow-hidden rounded-md bg-400 opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
       >
         <Suspense>
           <div className="relative size-full">
@@ -80,7 +80,7 @@ const Carousel = () => {
                   index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="relative mx-auto flex h-full w-full flex-col justify-around py-8 px-3 md:w-[60%] md:gap-2 md:px-1">
+                <div className="relative mx-auto flex h-full w-full flex-col justify-around pb-8 px-3 md:w-[60%] md:gap-2 md:px-1">
                   <h2 className="text-3xl uppercase text-600">{title}</h2>
                   <p className="text-balance leading-tight text-base">{text}</p>
                   <div className="flex w-fit gap-4 pt-6">
@@ -90,13 +90,13 @@ const Carousel = () => {
                       priority
                       height={100}
                       width={100}
-                      className="mx-auto h-16 w-16 rounded-lg object-cover object-center"
+                      className="mx-auto h-16 w-16 rounded-full object-cover object-center"
                     />
                     <div className="my-auto -space-y-2">
                       <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
                         {name}
                       </h3>
-                      <p className="text-500 md:text-900">{title}</p>
+                      <p className="text-600 md:text-900">{title}</p>
                     </div>
                   </div>
                 </div>
