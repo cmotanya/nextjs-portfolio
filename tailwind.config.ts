@@ -49,25 +49,13 @@ const config: Config = {
 
       /* animation styles */
       animation: {
-        "sticky-nav":
-          "sticky-nav 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+        "button-arrow": "animate-button-arrow 1s ease infinite",
         "gradient-animation": "gradient-animation 30s ease infinite",
         "slide-panel": "slide-panel 0.5s linear forwards",
       },
 
       /* animation keyframes styles */
       keyframes: {
-        /* sticky-nav animation */
-        "sticky-nav": {
-          from: {
-            opacity: "0",
-          },
-          to: {
-            opacity: "1",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            boxShadow: "0 0 0.75rem rgba(0, 0, 0, 0.5)",
-          },
-        },
         /*gradient-animation */
         "gradient-animation": {
           "0%": { backgroundPosition: "0% 50%" },

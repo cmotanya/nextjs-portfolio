@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "../utils/cn";
+import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 
 const delay = `delay-${Math.floor(Math.random() * 10)}ms`;
 
@@ -110,7 +111,10 @@ function SkillDrawer({
           isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0",
         )}
       >
-        {isOpen ? "Hide Details" : "Show Details"}
+        <span className="flex items-center gap-2">
+          {isOpen ? "Hide Detail" : "Show Detail"}
+          <span>{isOpen ? <IconChevronUp /> : <IconChevronDown />}</span>
+        </span>
       </button>
 
       {isOpen && (
