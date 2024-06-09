@@ -68,7 +68,7 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[18rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
+        className="invisible relative mx-auto h-[20rem] w-full scale-0 transform overflow-hidden rounded-md bg-secondary-clr opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
       >
         <Suspense>
           <div className="relative size-full">
