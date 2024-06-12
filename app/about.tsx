@@ -33,7 +33,7 @@ function About() {
 
         <AboutButtons />
       </div>
-      <Toaster position="bottom-center" duration={3000} richColors />
+      <Toaster position="top-center" duration={3000} richColors />
     </section>
   );
 }

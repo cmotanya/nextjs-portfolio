@@ -21,15 +21,14 @@ const AboutButtons = () => {
       link.click();
       document.body.removeChild(link);
 
-      // toast.promise(promise, {
-      //   loading: "Downloading",
-      //   success: (data: { name: string }) => {
-      //     return data.name + " downloaded!";
-      //   },
-      //   error: () => "Something went wrong!",
-      // });
-      toast.success("Downloaded!");
-      toast.error("There was an error. Please try again later.");
+      toast.promise(promise, {
+        loading: "Downloading",
+        success: (data: { name: string }) => {
+          return data.name + " downloaded!";
+        },
+        error: () => "Something went wrong!",
+      });
+      // toast.success("Downloaded!");
     }, 3000);
   }, []);
 
