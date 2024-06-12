@@ -1,6 +1,7 @@
 import React from "react";
 import Education from "./components/education";
 import AboutButtons from "./components/aboutButtons";
+import { Toaster } from "sonner";
 
 function About() {
   return (
@@ -32,6 +33,7 @@ function About() {
 
         <AboutButtons />
       </div>
+      <Toaster position="bottom-center" duration={3000} richColors />
     </section>
   );
 }

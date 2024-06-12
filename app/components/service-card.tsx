@@ -75,7 +75,7 @@ const ServiceCard = () => {
           <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
             <IconDeviceLaptop /> web
           </p>
-          <div className="space-y-2 *:leading-tight dark:text-400">
+          <div className="text-800 space-y-2 *:leading-tight dark:text-400">
             <p>
               <strong>Sing-page website:</strong> Perfect for small businesses
               or personal projects.
@@ -98,7 +98,7 @@ const ServiceCard = () => {
 
         <div
           ref={netCardRef}
-          className="invisible -rotate-6 flex scale-75 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:bg-800"
+          className="invisible flex -rotate-6 scale-75 transform flex-col justify-between rounded-sm bg-secondary-clr p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:bg-800"
         >
           <p className="flex items-center justify-center gap-3 pb-3 text-xl uppercase text-bright-clr dark:text-600">
             <IconTools /> cctv and networking

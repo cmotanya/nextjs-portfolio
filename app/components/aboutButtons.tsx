@@ -1,6 +1,8 @@
 import { IconBrandLinkedin, IconFile } from "@tabler/icons-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import { promise } from "zod";
 
 const AboutButtons = () => {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -18,6 +20,16 @@ const AboutButtons = () => {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+
+      // toast.promise(promise, {
+      //   loading: "Downloading",
+      //   success: (data: { name: string }) => {
+      //     return data.name + " downloaded!";
+      //   },
+      //   error: () => "Something went wrong!",
+      // });
+      toast.success("Downloaded!");
+      toast.error("There was an error. Please try again later.");
     }, 3000);
   }, []);
 
@@ -62,7 +74,7 @@ const AboutButtons = () => {
         </Link>
         <button
           onClick={handleDownload}
-          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-300 shadow hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
+          className="flex flex-1 transform items-center justify-center gap-2 rounded-full bg-primary-clr px-4 py-3 text-300 shadow transition-all hover:ring-800 active:scale-105 dark:bg-transparent dark:ring-2 dark:ring-700"
         >
           <IconFile />
           {isDownloading ? "Downloading..." : "Download CV"}

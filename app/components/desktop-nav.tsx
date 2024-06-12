@@ -20,8 +20,8 @@ function NavLink({
       className={cn(
         "group absolute top-1/2 flex h-full w-full -translate-y-1/2 items-center justify-center scroll-smooth rounded-md text-3xl hover:text-300 md:text-2xl",
         active
-          ? "bg-800 font-semibold text-300 md:bg-transparent"
-          : "font-semibold text-800 dark:text-neutral-400/50",
+          ? "bg-800 font-semibold text-300 dark:font-normal md:bg-transparent"
+          : "font-semibold text-800 dark:font-normal dark:text-neutral-400/50",
       )}
     >
       {children}
