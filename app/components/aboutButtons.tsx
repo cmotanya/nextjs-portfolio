@@ -28,7 +28,7 @@ const AboutButtons = () => {
       //   },
       //   error: () => "Something went wrong!",
       // });
-      toast.success("Downloaded!");
+      toast.success("Resume downloaded!");
     }, 3000);
   }, []);
 
