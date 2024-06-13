@@ -64,8 +64,8 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               type="text"
               placeholder="enter name..."
               name="name"
-              autoComplete="name"
-              className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 autofill:bg-yellow-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
+              autoComplete="off"
+              className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.name && (
               <span
@@ -79,7 +79,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               type="email"
               name="email"
               placeholder="enter email..."
-              autoComplete="email"
+              autoComplete="off"
               className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.email && (
@@ -94,7 +94,7 @@ function ContactForm({ accessKey }: { accessKey: string }) {
               type="tel"
               name="mobile"
               placeholder="enter telephone..."
-              autoComplete="tel"
+              autoComplete="off"
               className={`light dark rounded-sm bg-transparent py-2 ps-3 ring-2 ring-500 placeholder:text-500 focus-within:outline-none focus-within:ring-700 dark:py-2 dark:text-400 dark:ring-700 dark:placeholder:text-600 dark:focus-within:ring-500`}
             />
             {errors.mobile && (
