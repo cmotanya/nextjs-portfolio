@@ -106,7 +106,7 @@ function SkillDrawer({
           toggleDrawer(skillName);
         }}
         className={cn(
-          "transform rounded-full bg-secondary-clr px-3 py-1 outline-none outline-offset-2 outline-secondary-clr transition-all duration-500 ease-in-out hover:bg-accent-clr hover:outline-accent-clr dark:bg-neutral-800/50 dark:outline-800 dark:hover:font-semibold dark:hover:text-500 dark:hover:outline-700",
+          "transform rounded-full bg-secondary-clr px-3 py-1 outline-none outline-offset-2 outline-secondary-clr transition-all duration-500 ease-in-out hover:bg-accent-clr hover:outline-accent-clr dark:bg-slate-800/50 dark:outline-800 dark:hover:font-semibold dark:hover:text-500 dark:hover:outline-700",
           isOpen ? "font-semibold dark:text-500 dark:outline-700" : "",
           isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0",
         )}
