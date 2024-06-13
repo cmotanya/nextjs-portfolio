@@ -79,58 +79,6 @@
 }
 
 @layer components {
-  /* dark-theme auto-fill */
-  :is(.dark) input:-webkit-autofill,
-  :is(.dark) textarea:-webkit-autofill,
-  :is(.dark) input:-webkit-autofill:hover,
-  :is(.dark) textarea:-webkit-autofill:focus,
-  :is(.dark) select:-webkit-autofill,
-  :is(.dark) select:-webkit-autofill:hover {
-    border: 2px solid var(--custom-500);
-    font-size: 1.125rem;
-    -webkit-text-fill-color: var(--custom-400);
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    transition: background-color 5000s ease-in-out 0s;
-    caret-color: var(--custom-900);
-  }
-
-  :is(.dark) input:-webkit-autofill:focus,
-  :is(.dark) textarea:-webkit-autofill:hover,
-  :is(.dark) select:-webkit-autofill:focus {
-    border: 2px solid var(--custom-500);
-    font-size: 1.125rem;
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    -webkit-text-fill-color: var(--custom-400);
-    transition: background-color 5000s ease-in-out 0s;
-    caret-color: var(--custom-400);
-  }
-
-  /* light-theme auto-fill */
-  :is(.light) input:-webkit-autofill,
-  :is(.light) input:-webkit-autofill:hover,
-  :is(.light) textarea:-webkit-autofill,
-  :is(.light) textarea:-webkit-autofill:focus,
-  :is(.light) select:-webkit-autofill,
-  :is(.light) select:-webkit-autofill:hover {
-    border: 2px solid var(--custom-500);
-    font-size: 1.125rem;
-    -webkit-text-fill-color: var(--custom-900);
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    transition: background-color 5000s ease-in-out 0s;
-    caret-color: var(--custom-900);
-  }
-
-  :is(.light) input:-webkit-autofill:focus,
-  :is(.light) textarea:-webkit-autofill:hover,
-  :is(.light) select:-webkit-autofill:focus {
-    border: 2px solid var(--custom-500);
-    font-size: 1.125rem;
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    -webkit-text-fill-color: var(--custom-900);
-    transition: background-color 5000s ease-in-out 0s;
-    caret-color: var(--custom-900);
-  }
-
   p {
     @apply leading-[2rem];
   }
