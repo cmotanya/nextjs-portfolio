@@ -83,26 +83,28 @@ const Carousel = () => {
               >
                 <div className="relative mx-auto flex h-full w-full px-3 pb-8 md:w-[80%] md:gap-2 md:px-1 md:pb-0">
                   {/* Testimonial-content */}
-                  <div className="mx-auto flex h-full flex-col justify-center gap-8 md:w-[80%]">
+                  <div className="mx-auto flex h-full flex-col justify-center gap-2 md:w-[80%]">
                     <h3 className="uppercase text-600">{title}</h3>
-                    <p className="text-balance leading-tight">
-                      &lsquo; {text} &rsquo;
-                    </p>
-                    <div className="flex w-fit gap-4">
-                      <Image
-                        src={src}
-                        alt={`Slide ${src}`}
-                        priority
-                        height={100}
-                        width={100}
-                        className="mx-auto h-16 w-16 rounded-full object-cover object-center"
-                      />
-                      <div className="my-auto -space-y-2">
-                        <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
-                          {name}
-                        </h3>
-                        <p className="text-600 dark:text-500">{title}</p>
-                      </div>
+                    <div className="flex gap-6 flex-col">
+                      <p className="text-balance leading-tight">
+                        &lsquo;{text}&rsquo;
+                      </p>
+                      <div className="flex w-fit gap-4">
+                        <Image
+                          src={src}
+                          alt={`Slide ${src}`}
+                          priority
+                          height={100}
+                          width={100}
+                          className="mx-auto h-16 w-16 rounded-full object-cover object-center"
+                        />
+                        <div className="my-auto -space-y-2">
+                          <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
+                            {name}
+                          </h3>
+                          <p className="text-600 dark:text-500">{title}</p>
+                        </div>
+                    </div>
                     </div>
                   </div>
                 </div>
