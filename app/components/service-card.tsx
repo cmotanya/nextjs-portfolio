@@ -75,7 +75,7 @@ const ServiceCard = () => {
       <h3 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
         need a quotation for my service:
       </h3>
-      <div className="mt-2 flex flex-col gap-4 md:flex-row">
+      <div className="mt-2 grid grid-flow-row grid-cols-2 gap-4 md:grid-flow-col">
         <div
           ref={webCardRef}
           className="invisible flex rotate-6 scale-75 transform flex-col justify-between rounded-md border-2 border-400 bg-transparent p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:border-800 dark:bg-slate-800/40"
@@ -85,7 +85,7 @@ const ServiceCard = () => {
           </p>
           <div className="space-y-2 text-800 *:leading-tight dark:text-400">
             <p className="flex">
-              <IconCheckbox size={53} className="-mt-[0.8rem] mr-2" />
+              <IconCheckbox size={45} className="-mt-[0.8rem] mr-2" />
               <span className="text-700 dark:text-500">
                 Sing-page website: Perfect for small businesses or personal
                 projects.
@@ -93,7 +93,7 @@ const ServiceCard = () => {
             </p>
 
             <p className="flex">
-              <IconCheckbox size={53} className="-mt-[0.8rem] mr-2" />
+              <IconCheckbox size={45} className="-mt-[0.8rem] mr-2" />
               <span className="text-700 dark:text-500">
                 Portfolio website:Showcase your work in a stunning online
                 portfolio.
@@ -117,7 +117,7 @@ const ServiceCard = () => {
 
           <div className="space-y-2 *:leading-tight dark:text-400">
             <p className="flex">
-              <IconCheckbox size={53} className="-mt-[0.8rem] mr-2" />
+              <IconCheckbox size={52} className="-mt-[0.8rem] mr-2" />
               <span className="text-700 dark:text-500">
                 Professional CCTV installation for security and surveillance:
                 Prices start from KShs.8,000
@@ -125,7 +125,7 @@ const ServiceCard = () => {
             </p>
 
             <p className="flex">
-              <IconCheckbox size={50} className="-mt-[0.8rem] mr-2" />{" "}
+              <IconCheckbox size={52} className="-mt-[0.8rem] mr-2" />{" "}
               <span className="text-700 dark:text-500">
                 Custom network design and installation: Prices may vary based on
                 project scope.
@@ -133,7 +133,7 @@ const ServiceCard = () => {
             </p>
           </div>
           <div className="mt-5 flex justify-center">
-            <button className="w-full transform rounded-full bg-secondary-clr px-4 py-2 font-semibold uppercase transition active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600 md:w-fit">
+            <button className="w-full transform rounded-full bg-primary-clr px-4 py-2 font-semibold uppercase text-300 transition active:-translate-y-2 dark:bg-900 dark:text-400 dark:hover:text-600 md:w-fit">
               connect now
             </button>
           </div>
