@@ -117,7 +117,7 @@ const ServiceCard = () => {
 
           <div className="space-y-2 *:leading-tight dark:text-400">
             <p className="flex">
-              <IconCheckbox size={52} className="-mt-[0.8rem] mr-2" />
+              <IconCheckbox size={55} className="-mt-[0.8rem] mr-2" />
               <span className="text-700 dark:text-500">
                 Professional CCTV installation for security and surveillance:
                 Prices start from KShs.8,000
@@ -125,7 +125,7 @@ const ServiceCard = () => {
             </p>
 
             <p className="flex">
-              <IconCheckbox size={52} className="-mt-[0.8rem] mr-2" />{" "}
+              <IconCheckbox size={55} className="-mt-[0.8rem] mr-2" />{" "}
               <span className="text-700 dark:text-500">
                 Custom network design and installation: Prices may vary based on
                 project scope.
