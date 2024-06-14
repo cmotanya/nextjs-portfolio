@@ -84,7 +84,10 @@ const Carousel = () => {
                 <div className="relative mx-auto flex h-full w-full px-3 pb-8 md:w-[80%] md:gap-2 md:px-1 md:pb-0">
                   {/* Testimonial-content */}
                   <div className="mx-auto flex h-full flex-col justify-center gap-8 md:w-[80%]">
-                    <p className="text-balance leading-tight">{text}</p>
+                    <h3 className="uppercase text-600">{title}</h3>
+                    <p className="text-balance leading-tight">
+                      &lsquo; {text} &rsquo;
+                    </p>
                     <div className="flex w-fit gap-4">
                       <Image
                         src={src}
