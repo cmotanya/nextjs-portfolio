@@ -75,7 +75,7 @@ const ServiceCard = () => {
       <h3 className="text-xl font-semibold uppercase text-light-clr dark:text-600">
         need a quotation for my service:
       </h3>
-      <div className="mt-2 grid md:grid-cols-2 gap-4">
+      <div className="mt-2 grid gap-4 md:grid-cols-2">
         <div
           ref={webCardRef}
           className="invisible flex rotate-6 scale-75 transform flex-col justify-between rounded-md border-2 border-400 bg-transparent p-3 opacity-0 shadow-xl transition duration-700 ease-in-out dark:border-800 dark:bg-slate-800/40"

@@ -1,6 +1,7 @@
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { images } from "../lib/global_links";
+import { IconStarFilled } from "@tabler/icons-react";
 
 const Carousel = () => {
   const testimonialRef = useRef(null);
@@ -68,7 +69,7 @@ const Carousel = () => {
 
       <div
         ref={testimonialRef}
-        className="invisible relative mx-auto h-[18rem] w-full scale-0 transform overflow-hidden rounded-md bg-400 opacity-0 shadow-xl transition duration-300 dark:bg-800 md:h-[20rem]"
+        className="relative mx-auto h-[18rem] w-full scale-0 transform overflow-hidden rounded-md bg-slate-400/50 shadow-2xl transition duration-300 dark:bg-800 md:h-[20rem]"
       >
         <Suspense>
           <div className="relative size-full">
@@ -81,11 +82,9 @@ const Carousel = () => {
                 }`}
               >
                 <div className="relative mx-auto flex h-full w-full px-3 pb-8 md:w-[80%] md:gap-2 md:px-1 md:pb-0">
-                  {/* For mobile */}
-                  <div className="flex h-full w-full flex-col justify-around md:hidden">
-                    <p className="text-balance text-base leading-tight">
-                      {text}
-                    </p>
+                  {/* Testimonial-content */}
+                  <div className="mx-auto flex h-full flex-col justify-center gap-8 md:w-[80%]">
+                    <p className="text-balance leading-tight">{text}</p>
                     <div className="flex w-fit gap-4">
                       <Image
                         src={src}
@@ -95,29 +94,6 @@ const Carousel = () => {
                         width={100}
                         className="mx-auto h-16 w-16 rounded-full object-cover object-center"
                       />
-                      <div className="my-auto -space-y-2">
-                        <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
-                          {name}
-                        </h3>
-                        <p className="text-600 dark:text-500">{title}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* For Desktop */}
-                  <div className="hidden h-full w-full grid-flow-col grid-cols-[35%_65%] items-center gap-4 md:grid">
-                    <Image
-                      src={src}
-                      alt={`Slide ${src}`}
-                      priority
-                      height={400}
-                      width={200}
-                      className="h-[14rem] w-full rounded-lg object-cover object-center"
-                    />
-                    <div className="flex w-fit flex-col gap-4">
-                      <p className="text-balance text-base leading-tight">
-                        {text}
-                      </p>
                       <div className="my-auto -space-y-2">
                         <h3 className="font-semibold text-bright-clr dark:text-secondary-clr">
                           {name}
@@ -146,7 +122,7 @@ const Carousel = () => {
         {/* Left Arrows */}
         <button
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-primary-clr p-2 text-white dark:bg-900 md:block"
+          className="absolute left-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-600 p-2 text-white dark:bg-900 md:block"
         >
           <span aria-hidden="true"></span>
           <svg
@@ -169,7 +145,7 @@ const Carousel = () => {
         {/* Right Arrows */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-primary-clr p-2 text-white dark:bg-900 md:block"
+          className="absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-full bg-600 p-2 text-white dark:bg-900 md:block"
         >
           <span aria-hidden="true"></span>
           <svg
