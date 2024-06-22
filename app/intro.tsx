@@ -7,33 +7,21 @@ import TextAnimation from "./components/text-animation";
 
 const Intro = () => {
   return (
-    <section className="pt-[6rem] font-semibold md:pt-[8rem]">
-      <div className="grid gap-4 md:grid-flow-col md:grid-cols-[65%_35%]">
-        <div className="space-y-6 md:space-y-10">
-          <p className="animate-pulse space-y-6 md:space-y-10 md:text-xl">
-            👋 Hi there, I&apos;m Cornelius
-          </p>
-          <h2 className="text-4xl font-bold"></h2>
-          <p className="h-[3.6rem] font-caveat text-2xl uppercase text-fuchsia-600 md:h-auto">
-            Expert in <TextAnimation />
-          </p>
-          <p className="mb-8">
-            As an IT graduate with a passion for technology, I help businesses
-            build an online presence, secure their premises by implementing
-            robust security measures, optimizing lan configurations, and
-            extracting valuable insights from data.
-          </p>
-        </div>
-        <Image
-          src={introImage}
-          alt="into image"
-          width="300"
-          height="200"
-          className="m-auto hidden h-[15rem] w-[15rem] rotate-3 rounded-md object-cover md:block"
-        />
+    <section className="flex h-screen flex-col justify-between pb-4 pt-10 font-semibold sm:pt-[10rem] md:justify-center md:pt-0">
+      <div className="space-y-4 pt-14 xs:space-y-8 sm:pt-0 md:pt-0">
+        <h1 className="text-center text-2xl sm:text-4xl">
+          BUILD YOUR NEXT PRO-LEVEL WEBSITE WITH US!
+        </h1>
+
+        <p className="font-playwrite text-lg dark:text-500 sm:text-xl">
+          As an IT graduate with a passion for technology, I help businesses
+          build an online presence, secure their premises by implementing robust
+          security measures, optimizing lan configurations, and extracting
+          valuable insights from data.
+        </p>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-5 md:flex-row">
+      <div className="mt-10 flex flex-col gap-5 md:flex-row">
         <a
           href="#contact"
           className="flex-1 rounded-full bg-primary-clr px-6 py-3 text-center text-200 shadow-lg transition active:scale-105 dark:bg-800 dark:hover:bg-slate-700/50"

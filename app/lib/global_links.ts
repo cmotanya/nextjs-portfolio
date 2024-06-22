@@ -1,3 +1,5 @@
+import { IconBriefcase, IconMail } from "@tabler/icons-react";
+
 /* profile images for carousal */
 export const images = [
   {
@@ -60,9 +62,9 @@ export const tabImg = [
 
 /* nav items */
 export const nav_items = [
-  { name: "about", link: "#about" },
-  { name: "experience", link: "#experience" },
-  { name: "contact", link: "#contact" },
+  { name: "about", link: "#about", icon: IconBriefcase },
+  { name: "experience", link: "#experience", icon: IconBriefcase },
+  { name: "contact", link: "#contact", icon: IconBriefcase },
 ];
 
 export const introImage =

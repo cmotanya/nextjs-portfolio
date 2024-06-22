@@ -10,16 +10,20 @@ import WelcomePopup from "./components/welcomePopUp";
 
 function Home() {
   return (
-    <main className="mx-auto">
+    <div>
       <WelcomePopup />
-      <Navigation />
-      <Intro />
-      <About />
-      <Experience />
-      <Contact />
-      <TopArrowButton />
-      <Footer />
-    </main>
+      <div className="">
+        <Navigation />
+        <main className="md:ml-[30%] md:w-[70%] w-full">
+          <Intro />
+          <About />
+          <Experience />
+          <Contact />
+          <TopArrowButton />
+          <Footer />
+        </main>
+      </div>
+    </div>
   );
 }
 

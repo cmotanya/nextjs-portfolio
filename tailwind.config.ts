@@ -26,6 +26,7 @@ const config: Config = {
         quicksand: ["Quicksand", "sans-serif"],
         montserrat: ["Montserrat", "sans"],
         caveat: ["caveat", "sans"],
+        playwrite: ["Playwrite", "sans"],
       },
 
       /* colors */
